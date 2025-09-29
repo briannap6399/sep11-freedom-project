@@ -1,15 +1,15 @@
 # Tool Learning Log
 
-## Tool: JSON APIs (Literature)
+## Tool: JSON APIs (Geogle)
 
-## Project: Wordle-Inspired Book Game (Literatle)
+## Project: Wordle-Inspired Geography Game (Geogle)
 
 ---
 
 ### 09/29/25 - 10/06/25:
 
-* [Main source of Data = Gutendex](https://gutendex.com/)
-    * [Look here for Github Specifics](https://github.com/garethbjohnson/gutendex)
+* [Main source of Data = GeographQL](https://geographql.netlify.app/)
+
 
 ### X/X/XX:
 * Text
