@@ -7,7 +7,9 @@
 ---
 
 ### 09/29/25 - 10/06/25:
-* Text
+
+* [Main source of Data = Gutendex](https://gutendex.com/)
+    * [Look here for Github Specifics](https://github.com/garethbjohnson/gutendex)
 
 ### X/X/XX:
 * Text
