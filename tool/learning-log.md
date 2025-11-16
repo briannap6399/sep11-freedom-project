@@ -41,8 +41,48 @@ So, good news! I think it might be best if I forgo using a `.js` file for this t
 
 <img src="marina-sprite.png"></img>
 
+The woman in this sprite isn't my own creation admittedly, and instead she's from one of my favorite video game franchises (Splatoon), but I thought it would be cool to tinker with her sprite! With that said, the next part of this tutorial gives insight on using some properties you'd actually see in CSS:
+
+```js
+loadSprite("marina", "marina-sprite.png");
+add([
+    sprite("marina"),
+    pos(80,50),
+    scale(.5),
+    rotate(30),
+    color(25,25,25),
+]);
+```
+I never knew that Kaboom includes CSS Properties, but now that I do know I'm certainly more than impressed! Now, the 3 new properties as seen in this miniature chunk of code functions just how you'd expect:
+
+* `scale(),` - *Input a scale size of your choosing on a sprite. Any values > 1 will make the sprite dilate in size, while any values < 1 but more than 0 (such as .5 for half or .25 for a quarter) will make the sprite compress.*
+* `rotate(),` - *Makes the sprite rotate on a simple degree scale. What I've noticed for this command is the fact that the sprite seemingly moves in a wider circle while also making it point in a different direction. For example, if I make Marina rotate about 180 degrees, not only will she be upside down, but most of her will also be off the screen.*
+* `color(),` - *Simply changes the color of a sprite based on an RBG system. You can add 3 numbers and based off the colors you add, you will see the sprite change.*
+
+With the meanings of these properties listed, here is what they make Marina look like when all put together:
 
 ![CSS Properties-Marina](image.png)
+
+Pretty cool in all honesty. But before we wrap up this session of tinkering, I want to mention one more chunk of code that while not mentioned exactly in the tutorial, I think it'd be nice to jot down now. To be specific, it's a chunk of code that lets you move your sprite:
+
+```js
+const spriteMarina = add([
+    sprite("marina"),
+    pos(80,50),
+    scale(.5),
+    area(),
+    body(),
+])
+const moveSpeed = 230;
+onKeyPress("right", () => {
+    spriteMarina.move(moveSpeed,0)
+})
+onKeyPress("left", () => {
+    spriteMarina.move(-moveSpeed,0)
+})
+```
+In order to make your sprite can actually move, you'd need to make a variable that holds your sprite. In this case, I used `spriteMarina` as my variable since it lets me know that what I'm doing is for, well.. Marina. Before I can think of using the movement code, I need to make sure I not only define how fast she'd move (using another vairable called `moveSpeed`) but I also need to consider what key on a keyboard will make her move. For this test, I decided to use only the left and right arrow key and plugged it into `onKeyPress`, which has a self explanatory name. I cannot stress how important it is to imagine the checkerboard as a coordinate plane, as a `moveSpeed` with a negative sign attached to it will make it go left, while a poisitive `moveSpeed` will make it move right. I know you can also make your sprite jump by using similar code and instead of including the movement speed variable as well as `.move()`, you use `.jump()`. 
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

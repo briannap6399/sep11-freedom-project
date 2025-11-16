@@ -1,20 +1,33 @@
 <script type="module">
-
-// import kaboom.js
 import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
-
-// initialize kaboom context
 kaboom();
 
-// add a piece of text at position (120, 80)
+ loadSprite("marina", "marina-sprite.png");
+// add([
+//     sprite("marina"),
+//     pos(80,50),
+//     scale(.5),
+//     rotate(180),
+//     color(25,25,25),
+// ]);
 
-loadSprite("marina", "marina-sprite.png");
-add([
+
+const spriteMarina = add([
     sprite("marina"),
     pos(80,50),
     scale(.5),
-    rotate(30),
-    color(25,25,25),
-]);
+    area(),
+    body(),
+])
+
+const moveSpeed = 230;
+onKeyPress("right", () => {
+
+    spriteMarina.move(moveSpeed,0)
+})
+onKeyPress("left", () => {
+
+    spriteMarina.move(-moveSpeed,0)
+})
 
 </script>
