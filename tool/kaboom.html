@@ -2,6 +2,8 @@
 import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
 kaboom();
 
+setGravity(1600);
+
  loadSprite("marina", "marina-sprite.png");
 // add([
 //     sprite("marina"),
@@ -15,12 +17,20 @@ kaboom();
 const spriteMarina = add([
     sprite("marina"),
     pos(80,50),
-    scale(.5),
+    scale(.75),
     area(),
     body(),
 ])
 
-const moveSpeed = 230;
+// .jump() when "space" key is pressed
+
+onKeyPress("space", () => {
+    if (spriteMarina.isGrounded()) {
+    spriteMarina.jump()
+    }
+})
+
+const moveSpeed = 5000;
 onKeyPress("right", () => {
 
     spriteMarina.move(moveSpeed,0)
@@ -29,5 +39,26 @@ onKeyPress("left", () => {
 
     spriteMarina.move(-moveSpeed,0)
 })
+add([
+    rect(width(), 48),
+    pos(0, height() - 48),
+    outline(2),
+    area(),
+    body({ isStatic: true }),
+    color(127, 200, 225),
+])
+
+add([
+    rect(48, 64),
+    area(),
+    outline(4),
+    pos(width(), height() - 48),
+    anchor("botleft"),
+    color(255, 180, 255),
+    move(LEFT, 240),
+    "tree"
+]);
+
+
 
 </script>
