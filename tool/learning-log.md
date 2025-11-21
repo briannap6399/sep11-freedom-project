@@ -101,7 +101,7 @@ add([
     color(127, 200, 225),
 ])
 ```
-
+As seen in this piece of code, you can create a platform by first defining the width and height of the platform, but also making sure the platform has `area()` and `body({isStatic: true})` connected to it, or else the sprite won't be able to land on it and use it as, well.. a Platform. 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
