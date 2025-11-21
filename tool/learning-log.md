@@ -89,7 +89,7 @@ In order to make your sprite can actually move, you'd need to make a variable th
 
 **[Entrance to Kaboom:](https://kaboomjs.com/)**
 
-As mentioned last time, 
+As mentioned last time, you can make a sprite "jump" by using the `.jump()` command, but 
 
 <!--
 * Links you used today (websites, videos, etc)
