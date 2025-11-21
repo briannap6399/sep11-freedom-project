@@ -89,7 +89,18 @@ In order to make your sprite can actually move, you'd need to make a variable th
 
 **[Entrance to Kaboom:](https://kaboomjs.com/)**
 
-As mentioned last time, you can make a sprite "jump" by using the `.jump()` command, but it should be known that in order to properly use this command, you'd need to set some gravity, specifically through `setGravity()`, otherwise
+As mentioned last time, you can make a sprite "jump" by using the `.jump()` command, but it should be known that in order to properly use this command, you'd need to set some gravity, specifically through `setGravity()`, otherwise the sprite couldn't move. However even with that' you'd have problems. Since the sprite doesn't have a place to land, they'd be bound to fall indefinitely. For this, we can counter act it by adding a platform, as introduced in the Chrome Dinosaur project!
+
+```js
+add([
+    rect(width(), 48),
+    pos(0, height() - 48),
+    outline(2),
+    area(),
+    body({ isStatic: true }),
+    color(127, 200, 225),
+])
+```
 
 <!--
 * Links you used today (websites, videos, etc)
