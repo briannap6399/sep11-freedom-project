@@ -81,7 +81,15 @@ onKeyPress("left", () => {
     spriteMarina.move(-moveSpeed,0)
 })
 ```
-In order to make your sprite can actually move, you'd need to make a variable that holds your sprite. In this case, I used `spriteMarina` as my variable since it lets me know that what I'm doing is for, well.. Marina. Before I can think of using the movement code, I need to make sure I not only define how fast she'd move (using another vairable called `moveSpeed`) but I also need to consider what key on a keyboard will make her move. For this test, I decided to use only the left and right arrow key and plugged it into `onKeyPress`, which has a self explanatory name. I cannot stress how important it is to imagine the checkerboard as a coordinate plane, as a `moveSpeed` with a negative sign attached to it will make it go left, while a poisitive `moveSpeed` will make it move right. I know you can also make your sprite jump by using similar code and instead of including the movement speed variable as well as `.move()`, you use `.jump()`. 
+In order to make your sprite can actually move, you'd need to make a variable that holds your sprite. In this case, I used `spriteMarina` as my variable since it lets me know that what I'm doing is for, well.. Marina. Before I can think of using the movement code, I need to make sure I not only define how fast she'd move (using another vairable called `moveSpeed`) but I also need to consider what key on a keyboard will make her move. For this test, I decided to use only the left and right arrow key and plugged it into `onKeyPress`, which has a self explanatory name. I cannot stress how important it is to imagine the checkerboard as a coordinate plane, as a `moveSpeed` with a negative sign attached to it will make it go left, while a poisitive `moveSpeed` will make it move right. I know you can also make your sprite jump by using similar code and instead of including the movement speed variable as well as `.move()`, you use `.jump()`.
+
+## Tool: Kaboom
+## Project: Spanish based Platformer
+### 11/17/25 - 11/24/25:
+
+**[Entrance to Kaboom:](https://kaboomjs.com/)**
+
+As mentioned last time, 
 
 <!--
 * Links you used today (websites, videos, etc)
