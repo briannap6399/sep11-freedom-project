@@ -121,6 +121,7 @@ add([
 ```
 
 Last but not least, take a look at this code: Notice how it posesses similar commands to the one that forms the platform, but the main difference here is `anchor()` and `move(LEFT,240)`. `anchor()` in this circumstance represents the fixed position of a certain item: This could include sprites, but more likely than not you'd find this on platforms, or in this case.. Obstacles for the player. Now the `move(LEFT,240)` is pretty interesting: From what I'm understanding, `LEFT` is what controls an item to automatically travel from the right end of the screen to the left, and with `anchor()`, it consistently locks the item into moving in that pattern. Very cool!
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!--
 * Links you used today (websites, videos, etc)
