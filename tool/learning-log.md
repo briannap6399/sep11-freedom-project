@@ -83,6 +83,8 @@ onKeyPress("left", () => {
 ```
 In order to make your sprite can actually move, you'd need to make a variable that holds your sprite. In this case, I used `spriteMarina` as my variable since it lets me know that what I'm doing is for, well.. Marina. Before I can think of using the movement code, I need to make sure I not only define how fast she'd move (using another vairable called `moveSpeed`) but I also need to consider what key on a keyboard will make her move. For this test, I decided to use only the left and right arrow key and plugged it into `onKeyPress`, which has a self explanatory name. I cannot stress how important it is to imagine the checkerboard as a coordinate plane, as a `moveSpeed` with a negative sign attached to it will make it go left, while a poisitive `moveSpeed` will make it move right. I know you can also make your sprite jump by using similar code and instead of including the movement speed variable as well as `.move()`, you use `.jump()`.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Tool: Kaboom
 ## Project: Spanish based Platformer
 ### 11/17/25 - 11/24/25:
@@ -101,7 +103,25 @@ add([
     color(127, 200, 225),
 ])
 ```
-As seen in this piece of code, you can create a platform by first defining the width and height of the platform, but also making sure the platform has `area()` and `body({isStatic: true})` connected to it, or else the sprite won't be able to land on it and use it as, well.. a Platform. 
+As seen in this piece of code, you can create a platform by first defining the width and height of the platform, but also making sure the platform has `area()` and `body({isStatic: true})` connected to it, or else the sprite won't be able to land on it and use it as, well.. a Platform. `outline()` represents the border thickness of the platform, and the `height()` and `width()` that happen to be trapped inside of other commands (`rect()` & `pos()`), their function is genuinely self-explanatory. But when it's all put together you should see.. This!:
+
+![alt text](image-1.png)
+
+```js
+add([
+    rect(48, 64),
+    area(),
+    outline(4),
+    pos(width(), height() - 48),
+    anchor("botleft"),
+    color(255, 180, 255),
+    move(LEFT, 240),
+    "tree"
+]);
+```
+
+Last but not least, take a look at this code: Notice how it posesses similar commands to the one that forms the platform, but the main difference here is `anchor()` and `move(LEFT,240)`. `anchor()` in this circumstance represents the fixed position of a certain item: This could include sprites, but more likely than not you'd find this on platforms, or in this case.. Obstacles for the player. Now the `move(LEFT,240)` is pretty interesting: From what I'm understanding, `LEFT` is what controls an item to automatically travel from the right end of the screen to the left, and with `anchor()`, it consistently locks the item into moving in that pattern. Very cool!
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
