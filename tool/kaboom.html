@@ -2,7 +2,7 @@
 import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
 kaboom();
 
-setGravity(1600);
+setGravity(1300);
 
  loadSprite("marina", "marina-sprite.png");
 // add([
@@ -30,12 +30,12 @@ onKeyPress("space", () => {
     }
 })
 
-const moveSpeed = 5000;
-onKeyPress("right", () => {
+const moveSpeed = 500;
+onKeyDown("right", () => {
 
     spriteMarina.move(moveSpeed,0)
 })
-onKeyPress("left", () => {
+onKeyDown("left", () => {
 
     spriteMarina.move(-moveSpeed,0)
 })
@@ -48,17 +48,22 @@ add([
     color(127, 200, 225),
 ])
 
-add([
-    rect(48, 64),
-    area(),
-    outline(4),
-    pos(width(), height() - 48),
-    anchor("botleft"),
-    color(255, 180, 255),
-    move(LEFT, 240),
-    "tree"
-]);
+loop(3, () => {
+    add([
+        rect(48, 64),
+        area(),
+        outline(4),
+        pos(width(), height() - 48),
+        anchor("botleft"),
+        color(255, 180, 255),
+        move(LEFT, 240),
+        "tree"
+    ]);
+})
+spriteMarina.onCollide("tree", () => {
+    addKaboom(spriteMarina.pos);
+    shake();
 
-
+})
 
 </script>
