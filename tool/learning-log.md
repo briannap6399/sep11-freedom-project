@@ -126,11 +126,11 @@ Last but not least, take a look at this code: Notice how it posesses similar com
 
 ## Tool: Kaboom
 ## Project: Spanish based Platformer
-### 11/10/25 - 11/17/25:
+### 12/01/25 - 12/08/25:
 
 **[Entrance to Kaboom:](https://kaboomjs.com/)**
 
-
+For this week, I decided to take the 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
