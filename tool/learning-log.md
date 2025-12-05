@@ -130,7 +130,28 @@ Last but not least, take a look at this code: Notice how it posesses similar com
 
 **[Entrance to Kaboom:](https://kaboomjs.com/)**
 
-For this week, I decided to take the 
+For this week, I decided to take the obstacles from the last session of tinkering and try to find a way to make them spawn in repeatedly. This can easily be done through a `loop({})` (Not to confuse it with the concept of **LOOPING** in Javascript.), which, as the name implies, causes an event to loop for long periods of time. By taking the original code from the "Tree" and implementing it into the loop command:
+
+```js
+loop(3, () => {
+    add([
+        rect(48, 64),
+        area(),
+        outline(4),
+        pos(width(), height() - 48),
+        anchor("botleft"),
+        color(255, 180, 255),
+        move(LEFT, 240),
+        "tree"
+    ]);
+})
+```
+
+The obstacle will now spawn in at an established rate (For me, I had set this loop to 3 seconds, meaning that an obstacle will spawn every 3 seconds). That does sound a lot more interesting than before for sure, but but what happens when your sprite actually **HITS** an obstacle?
+
+![alt text](image-2.png)
+
+Well.. Nothing. 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
