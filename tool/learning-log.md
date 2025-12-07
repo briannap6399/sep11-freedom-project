@@ -151,7 +151,7 @@ The obstacle will now spawn in at an established rate (For me, I had set this lo
 
 ![alt text](image-2.png)
 
-Well.. Nothing. If we look at this chunk of code, we establish that a hitbox has been established for the obstacle, but when the player sprite tries to approach, 
+Well.. Nothing. If we look at this chunk of code, we establish that a hitbox has been established for the obstacle, but when the player sprite tries to approach it and fail to jump, all that happens is the sprite phases through the obstacle. For this little *WIP* game, I want to make it so the player gets notified they had hit something, and even get a punishment for failing to dodge it. Thankfully, there is a chunk 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
