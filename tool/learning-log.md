@@ -151,7 +151,16 @@ The obstacle will now spawn in at an established rate (For me, I had set this lo
 
 ![alt text](image-2.png)
 
-Well.. Nothing. If we look at this chunk of code, we establish that a hitbox has been established for the obstacle, but when the player sprite tries to approach it and fail to jump, all that happens is the sprite phases through the obstacle. For this little *WIP* game, I want to make it so the player gets notified they had hit something, and even get a punishment for failing to dodge it. Thankfully, there is a chunk 
+Well.. Nothing. If we look at this chunk of code, we establish that a hitbox has been established for the obstacle, but when the player sprite tries to approach it and fail to jump, all that happens is the sprite phases through the obstacle. For this little *WIP* game, I want to make it so the player gets notified they had hit something, and even get a punishment for failing to dodge it. Thankfully, there is a chunk of code that does exactly that: `.onCollide({})`. This command does exactly what I just described, taking 2 entities with a established hitbox and declaring what were to happen upon them colliding. However, it is important to note that you should absolutely make a tag under the obstacle or the other colliding force (not the sprite) in order for this to work, hence why the obstacle code has *"tree"* connected to it. With that said, take a look at this:
+
+```js
+spriteMarina.onCollide("tree", () => {
+    addKaboom(spriteMarina.pos);
+    shake();
+
+})
+```
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
