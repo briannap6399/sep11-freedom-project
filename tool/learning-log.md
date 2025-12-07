@@ -161,7 +161,9 @@ spriteMarina.onCollide("tree", () => {
 })
 ```
 
-This code declares that when the player sprite (Marina) were to collide with the tree, the Kaboom logo would actually appear right where she is, and the screen would shake for a very brief period of time, alerting the player that they made a mistake. This is something I definitely want to use for my final project, but I do know I want to refine this; It might be a bit too early to think so deeply about the game, but I want to establish a life system and if the player fails to answer spanish tri
+This code declares that when the player sprite (Marina) were to collide with the tree, the Kaboom logo would actually appear right where she is, and the screen would shake for a very brief period of time, alerting the player that they made a mistake. This is something I definitely want to use for my final project, but I do know I want to refine this; It might be a bit too early to think so deeply about the game, but I want to establish a life system and if the player fails to answer spanish trivia properly, then they will lose a life and experience the shock. Lose all 3 and then you'll see a gameover screen. Next time, I will be tinkering with some screen development, so I'm excited for that!
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
