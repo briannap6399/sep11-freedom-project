@@ -151,7 +151,7 @@ The obstacle will now spawn in at an established rate (For me, I had set this lo
 
 ![alt text](image-2.png)
 
-Well.. Nothing. 
+Well.. Nothing. If we look at this chunk of code, we establish that a hitbox has been established for the obstacle, but when the player sprite tries to approach, 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
