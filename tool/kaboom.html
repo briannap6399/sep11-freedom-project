@@ -2,6 +2,7 @@
 import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
 kaboom();
 
+
 setGravity(1300);
 
  loadSprite("marina", "marina-sprite.png");
@@ -48,18 +49,27 @@ add([
     color(127, 200, 225),
 ])
 
-loop(2, () => {
-    add([
-        rect(48, 64),
-        area(),
-        outline(4),
-        pos(width(), height() - 48),
-        anchor("botleft"),
-        color(255, 180, 255),
-        move(LEFT, 240),
-        "tree"
-    ]);
-})
+ function spawnTree() {
+
+        // add tree obj
+        add([
+            rect(48, rand(32, 96)),
+            area(),
+            outline(4),
+            pos(width(), height() - 48),
+            anchor("botleft"),
+            color(255, 180, 255),
+            move(LEFT, 300),
+            "tree",
+        ]);
+
+        // wait a random amount of time to spawn next tree
+        wait(rand(1, 2), spawnTree);
+
+    }
+
+    // start spawning trees
+    spawnTree();
 spriteMarina.onCollide("tree", () => {
     addKaboom(spriteMarina.pos);
     shake();
