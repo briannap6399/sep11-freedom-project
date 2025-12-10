@@ -66,4 +66,17 @@ spriteMarina.onCollide("tree", () => {
 
 })
 
+scene("game", () => {
+    add([
+        sprite("Marina"),
+    ])
+})
+
+scene("lose", () => {
+    add([
+        text("GAME OVER!"),
+        pos(center()),
+        anchor("center"),
+    ])
+})
 </script>
