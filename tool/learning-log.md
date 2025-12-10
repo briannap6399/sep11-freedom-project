@@ -168,6 +168,11 @@ This code declares that when the player sprite (Marina) were to collide with the
 ## Tool: Kaboom
 ## Project: Spanish based Platformer
 ### 12/08/25 - 12/15/25:
+
+**[Entrance to Kaboom:](https://kaboomjs.com/)**
+
+This week was absolutely packed with progress! Continuing what I wanted to do last week, I scrolled through Kaboom's catalogue and discovered some code that helps shift a 
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

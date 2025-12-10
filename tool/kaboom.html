@@ -73,7 +73,7 @@ add([
 spriteMarina.onCollide("tree", () => {
     addKaboom(spriteMarina.pos);
     shake();
-    go("lose");
+    lives--;
 
 })
 
@@ -97,8 +97,21 @@ const scoreLabel = add([
     pos(24,24),
 ])
 
+let lives = 3;
+const liveCount = add([
+    text(lives);
+    pos(34,24);
+])
 onUpdate(() => {
     score++;
     scoreLabel.text = score;
 })
+
+onUpdate(() => {
+    liveCount.text = score;
+})
+
+if (lives === 0) {
+    scene("lose");
+}
 </script>
