@@ -63,6 +63,7 @@ loop(2, () => {
 spriteMarina.onCollide("tree", () => {
     addKaboom(spriteMarina.pos);
     shake();
+    go("lose");
 
 })
 
@@ -78,5 +79,16 @@ scene("lose", () => {
         pos(center()),
         anchor("center"),
     ])
+})
+
+let score = 0;
+const scoreLabel = add([
+    text(score),
+    pos(24,24),
+])
+
+onUpdate(() => {
+    score++;
+    scoreLabel.text = score;
 })
 </script>
