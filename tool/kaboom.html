@@ -104,7 +104,7 @@ const liveCount = add([
 ])
 onUpdate(() => {
     score++;
-f (lives === 0) {
+if(lives === 0) {
      scene("lose");
 }    scoreLabel.text = score;
 })
