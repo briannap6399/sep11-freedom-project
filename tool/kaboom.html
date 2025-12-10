@@ -104,14 +104,13 @@ const liveCount = add([
 ])
 onUpdate(() => {
     score++;
-    scoreLabel.text = score;
+f (lives === 0) {
+     scene("lose");
+}    scoreLabel.text = score;
 })
 
-onUpdate(() => {
-    liveCount.text = score;
-})
+ onUpdate(() => {
+     liveCount.text = lives;
+ })
 
-if (lives === 0) {
-    scene("lose");
-}
 </script>
