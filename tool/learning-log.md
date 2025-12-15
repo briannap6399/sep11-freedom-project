@@ -182,8 +182,16 @@ scene("lose", () => {
     ])
 ```
 
-This essentially stops the game and forces the player to look at, well.. The bad ending scene.
+This essentially stops the game and forces the player to look at, well.. The bad ending scene. But this won't be able to trigger itself no no. Since I already have the scene established, now I'd need to give it a trigger. I already said I wanted it to be when Marina collides with one of the "trees", so I went into her `.onCollide({})` code and added in `go("lose");`. This is what that piece of code looks like now:
 
+```js
+spriteMarina.onCollide("tree", () => {
+    addKaboom(spriteMarina.pos);
+    shake();
+    // lives--;
+    go("lose");
+```
+Notice how 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

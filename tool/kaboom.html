@@ -70,14 +70,15 @@ add([
 
     // start spawning trees
     spawnTree();
+
+})
+
 spriteMarina.onCollide("tree", () => {
     addKaboom(spriteMarina.pos);
     shake();
     // lives--;
     go("lose");
-
-})
-
+    
 scene("game", () => {
     add([
         sprite("Marina"),
