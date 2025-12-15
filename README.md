@@ -22,8 +22,8 @@ For my project, I chose to independently study **X** in order to help me make **
 ## Blog
 Below you will find my blog about how I made my project.
 
-* [Entry 1](blog/entry01.md)
-* [Entry 2](blog/entry02.md)
+* [Entry 1: Tool Solidification](blog/entry01.md)
+* [Entry 2: Goal Setting](blog/entry02.md)
 * [Entry 3](blog/entry03.md)
 * [Entry 4](blog/entry04.md)
 * [Entry 5](blog/entry05.md)
