@@ -171,7 +171,7 @@ This code declares that when the player sprite (Marina) were to collide with the
 
 **[Entrance to Kaboom:](https://kaboomjs.com/)**
 
-This week was absolutely packed with progress! Continuing what I wanted to do last week, I scrolled through Kaboom's catalogue and discovered some code that helps shift the game towards a "Game Over" screen! This can be done through the `screen({})` command, 
+This week was absolutely packed with progress! Continuing what I wanted to do last week, I scrolled through Kaboom's catalogue and discovered some code that helps shift the game towards a "Game Over" screen! This can be done through the `screen({})` command, which could be triggered depending on the conditions you set and it'd end up taking 
 
 <!--
 * Links you used today (websites, videos, etc)
