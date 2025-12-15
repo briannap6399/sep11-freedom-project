@@ -191,7 +191,21 @@ spriteMarina.onCollide("tree", () => {
     // lives--;
     go("lose");
 ```
-Notice how 
+Notice how there's also `lives--;` visible. I won't get into that this week, but it'll be extremely important soon. Anyways before I go I want to talk about one more thing. You see, every game has some way of determining how good someone is, commonly through a score counter. To make a score counter in Kaboom it's.. Actually pretty simple. By creating a variable, I'll label it as `score` and giving it a value of 0, then creating another variable that has the value of `score`, the computer can begin to rapidly update itself through `onUpdate(({}))` and by connecting `.text` to your second variable, you have a prompt to score counter! It ends up looking something like this:
+
+```js
+let score = 0;
+const scoreLabel = add([
+    text(score),
+    pos(24,24),
+])
+
+onUpdate(() => {
+    score++;
+     scoreLabel.text = score;
+```
+
+Pretty cool huh? I'd think so personally but with that the game is pretty much done! Now I do want to try and implement that lives system I mentioned previously, but it's creation is for another day.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
