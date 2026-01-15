@@ -257,8 +257,44 @@ if (foodQuest === "rice") {
 }
 ```
 
-This second attempt actually works perfectly, but now I want to try and add in the other questions so the user doesn't automatically get the same food question. To do this I'll try to use `Math.random()` while also using the original array since it has all of the original 3 questions. 
+This second attempt actually works perfectly, but now I want to try and add in the other questions so the user doesn't automatically get the same food question. To do this I'll try to use `Math.random()` while also using the original array since it has all of the original 3 questions.
 
+```js
+add([
+text("Click either 'F' or 'C' to get a surprise!"),
+])
+var foodQuest = ["What is the most popular food in the world?", "what fruit is claimed to be a berry but ultimately isn't?", "What food is commonly eaten in Japan?"];
+
+onKeyPress("f", () => {
+var randomQuest = Math.ceil(Math.random() * (foodQuest.length - 1));
+if (randomQuest == 0) {
+  var ansZero = prompt(foodQuest[0]);
+    if (ansZero == "rice") {
+        alert("That's Correct!");
+    } else {
+        alert(ansZero + " is not the correct answer.. Sorry!");
+    }
+} else if (randomQuest == 1) {
+    var ansOne = prompt(foodQuest[1]);
+      if (ansOne == "banana") {
+          alert("That's Correct!");
+      } else {
+          alert(ansOne + " is not the correct answer.. Sorry!");
+      }
+} else {
+    var ansTwo = prompt(foodQuest[2]);
+      if (ansTwo == "ramen") {
+         alert("That's Correct!");
+      } else {
+        alert(ansTwo + " is not the correct answer.. Sorry!");
+      }
+}
+})
+```
+
+This attempt, while it certainly looks gigantic, surprisingly works incredibly well!
+
+![example](image-3.png)
 
 <!--
 * Links you used today (websites, videos, etc)

@@ -8,8 +8,32 @@ text("Click either 'F' or 'C' to get a surprise!"),
 
 var foodQuest = ["What is the most popular food in the world?", "what fruit is claimed to be a berry but ultimately isn't?", "What food is commonly eaten in Japan?"];
 
-var randomQues = Math.random() 
+onKeyPress("f", () => {
+var randomQuest = Math.ceil(Math.random() * (foodQuest.length - 1));
+if (randomQuest == 0) {
+  var ansZero = prompt(foodQuest[0]);
+    if (ansZero == "rice") {
+        alert("That's Correct!");
+    } else {
+        alert(ansZero + " is not the correct answer.. Sorry!");
+    }
+} else if (randomQuest == 1) {
+    var ansOne = prompt(foodQuest[1]);
+      if (ansOne == "banana") {
+          alert("That's Correct!");
+      } else {
+          alert(ansOne + " is not the correct answer.. Sorry!");
+      }
+} else {
+    var ansTwo = prompt(foodQuest[2]);
+      if (ansTwo == "ramen") {
+         alert("That's Correct!");
+      } else {
+        alert(ansTwo + " is not the correct answer.. Sorry!");
+      }
+}
 
+})
 // setGravity(1300);
 
 //  loadSprite("marina", "marina-sprite.png");
