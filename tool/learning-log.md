@@ -269,21 +269,21 @@ onKeyPress("f", () => {
 var randomQuest = Math.ceil(Math.random() * (foodQuest.length - 1));
 if (randomQuest == 0) {
   var ansZero = prompt(foodQuest[0]);
-    if (ansZero == "rice") {
+    if (ansZero == "rice" || ansZero == "Rice") {
         alert("That's Correct!");
     } else {
         alert(ansZero + " is not the correct answer.. Sorry!");
     }
 } else if (randomQuest == 1) {
     var ansOne = prompt(foodQuest[1]);
-      if (ansOne == "banana") {
+      if (ansOne == "strawberries" || ansOne == "Strawberries") {
           alert("That's Correct!");
       } else {
           alert(ansOne + " is not the correct answer.. Sorry!");
       }
 } else {
     var ansTwo = prompt(foodQuest[2]);
-      if (ansTwo == "ramen") {
+      if (ansTwo == "ramen" || ansTwo == "Ramen") {
          alert("That's Correct!");
       } else {
         alert(ansTwo + " is not the correct answer.. Sorry!");
@@ -292,7 +292,7 @@ if (randomQuest == 0) {
 })
 ```
 
-This attempt, while it certainly looks gigantic, surprisingly works incredibly well!
+This attempt, while it's a massive chunk of code, actually works incredibly well! It correctly randomly generates one of the 3  questions, and it gives the correct information upon answering correctly/incorrectly. I did have to add an `||` however, since if I were to put in the Uppercase variation of the correct answers, they'd be marked incorrectly. Nevertheless, they work smoothly now, but it confirms my idea beforehand which makes me extremely excited for the future. 
 
 ![example](image-3.png)
 
