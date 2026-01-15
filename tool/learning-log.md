@@ -257,7 +257,7 @@ if (foodQuest === "rice") {
 }
 ```
 
-This second attempt actually works perfectly, but now I want to try and add in the other questions so the user doesn't automatically get the same food question. To do this I'll try to use `Math.random()` while also using the original array in order 
+This second attempt actually works perfectly, but now I want to try and add in the other questions so the user doesn't automatically get the same food question. To do this I'll try to use `Math.random()` while also using the original array since it has all of the original 3 questions. 
 
 
 <!--
