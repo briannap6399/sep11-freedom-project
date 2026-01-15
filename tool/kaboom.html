@@ -2,127 +2,147 @@
 import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
 kaboom();
 
+add([
+text("Click either 'F' or 'C' to get a surprise!"),
+])
 
-setGravity(1300);
+onKeyPress("f", () => {
 
- loadSprite("marina", "marina-sprite.png");
-// add([
+    var foodQuest = ["What is the most popular food in the world?", "what fruit is claimed to be a berry but ultimately isn't?", "What food is commonly eaten in Japan?"];
+
+    var questAn = prompt("Please input a number from 0-2");
+
+    if (questAn === 0) {
+      prompt(foodQuest[0]);
+        if (prompt === "rice") {
+            alert("Correct Answer!");
+        } else {
+            alert("Oops! Refresh the page to try again!");
+        }
+    }
+
+})
+
+// setGravity(1300);
+
+//  loadSprite("marina", "marina-sprite.png");
+// // add([
+// //     sprite("marina"),
+// //     pos(80,50),
+// //     scale(.5),
+// //     rotate(180),
+// //     color(25,25,25),
+// // ]);
+
+
+// const spriteMarina = add([
 //     sprite("marina"),
 //     pos(80,50),
-//     scale(.5),
-//     rotate(180),
-//     color(25,25,25),
-// ]);
-
-
-const spriteMarina = add([
-    sprite("marina"),
-    pos(80,50),
-    scale(.75),
-    area(),
-    body(),
-])
-
-// .jump() when "space" key is pressed
-
-onKeyPress("space", () => {
-    if (spriteMarina.isGrounded()) {
-    spriteMarina.jump()
-    }
-})
-
-const moveSpeed = 500;
-onKeyDown("right", () => {
-
-    spriteMarina.move(moveSpeed,0)
-})
-onKeyDown("left", () => {
-
-    spriteMarina.move(-moveSpeed,0)
-})
-add([
-    rect(width(), 48),
-    pos(0, height() - 48),
-    outline(2),
-    area(),
-    body({ isStatic: true }),
-    color(127, 200, 225),
-])
-
- function spawnTree() {
-
-        // add tree obj
-        add([
-            rect(48, rand(32, 96)),
-            area(),
-            outline(4),
-            pos(width(), height() - 48),
-            anchor("botleft"),
-            color(255, 180, 255),
-            move(LEFT, 300),
-            "tree",
-        ]);
-
-        // wait a random amount of time to spawn next tree
-        wait(rand(1, 2), spawnTree);
-
-    }
-
-    // start spawning trees
-    spawnTree();
-
-})
-
-spriteMarina.onCollide("tree", () => {
-    addKaboom(spriteMarina.pos);
-    shake();
-    // lives--;
-    go("lose");
-    
-scene("game", () => {
-    add([
-        sprite("Marina"),
-    ])
-})
-
-scene("lose", () => {
-    add([
-        text("GAME OVER!"),
-        pos(center()),
-        anchor("center"),
-    ])
-
-//  add([
-//         text(score),
-//         pos(width() / 2, height() / 2 + 80),
-//         scale(2),
-//         anchor("center"),
-//     ]);
-});
-
-})
-
-let score = 0;
-const scoreLabel = add([
-    text(score),
-    pos(24,24),
-])
-
-// let lives = 3;
-// const liveCount = add([
-//     text(lives);
-//     pos(34,24);
+//     scale(.75),
+//     area(),
+//     body(),
 // ])
-onUpdate(() => {
-    score++;
-     scoreLabel.text = score;
-// if(lives === 0) {
-//      scene("lose");
-// }
-})
 
-//  onUpdate(() => {
-//      liveCount.text = lives;
-//  })
+// // .jump() when "space" key is pressed
+
+// onKeyPress("space", () => {
+//     if (spriteMarina.isGrounded()) {
+//     spriteMarina.jump()
+//     }
+// })
+
+// const moveSpeed = 500;
+// onKeyDown("right", () => {
+
+//     spriteMarina.move(moveSpeed,0)
+// })
+// onKeyDown("left", () => {
+
+//     spriteMarina.move(-moveSpeed,0)
+// })
+// add([
+//     rect(width(), 48),
+//     pos(0, height() - 48),
+//     outline(2),
+//     area(),
+//     body({ isStatic: true }),
+//     color(127, 200, 225),
+// ])
+
+//  function spawnTree() {
+
+//         // add tree obj
+//         add([
+//             rect(48, rand(32, 96)),
+//             area(),
+//             outline(4),
+//             pos(width(), height() - 48),
+//             anchor("botleft"),
+//             color(255, 180, 255),
+//             move(LEFT, 300),
+//             "tree",
+//         ]);
+
+//         // wait a random amount of time to spawn next tree
+//         wait(rand(1, 2), spawnTree);
+
+//     }
+
+//     // start spawning trees
+//     spawnTree();
+
+// })
+
+// spriteMarina.onCollide("tree", () => {
+//     addKaboom(spriteMarina.pos);
+//     shake();
+//     // lives--;
+//     go("lose");
+
+// scene("game", () => {
+//     add([
+//         sprite("Marina"),
+//     ])
+// })
+
+// scene("lose", () => {
+//     add([
+//         text("GAME OVER!"),
+//         pos(center()),
+//         anchor("center"),
+//     ])
+
+// //  add([
+// //         text(score),
+// //         pos(width() / 2, height() / 2 + 80),
+// //         scale(2),
+// //         anchor("center"),
+// //     ]);
+// });
+
+// })
+
+// let score = 0;
+// const scoreLabel = add([
+//     text(score),
+//     pos(24,24),
+// ])
+
+// // let lives = 3;
+// // const liveCount = add([
+// //     text(lives);
+// //     pos(34,24);
+// // ])
+// onUpdate(() => {
+//     score++;
+//      scoreLabel.text = score;
+// // if(lives === 0) {
+// //      scene("lose");
+// // }
+// })
+
+// //  onUpdate(() => {
+// //      liveCount.text = lives;
+// //  })
 
 </script>

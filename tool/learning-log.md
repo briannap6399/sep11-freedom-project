@@ -206,6 +206,39 @@ onUpdate(() => {
 ```
 
 Pretty cool huh? I'd think so personally but with that the game is pretty much done! Now I do want to try and implement that lives system I mentioned previously, but it's creation is for another day.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Tool: Kaboom
+## Project: Spanish based Platformer
+### 1/09/26 - 1/16/26:
+
+Hello and Happy New Year! For this Learning Log, I decided to temporarily move away from the original concept and instead focus on further trying to combine Javascript (what I know now at least), with what I've been learning from Kaboom! I once mentioned this in my 2nd Blog, but I essentially wanted to take the `onKeyPress()` command, and combine it with `prompt()` to make it so upon hitting a certain button (I'm focusing on one button specifically this time, F), the user then gets asked a question. I feel like this would be good practice for the final project since I know I want to make it so a certain button officially starts the game itself. Now, my 1st attempt worked.. Somewhat. You see, I was able to make the button and the first prompt did come out properly, but I also added one little option; A number selector to choose the question. Whenever I tried to implement a number however, the program would break and I'd only see a checkered screen.
+
+```js
+add([
+text("Click either 'F' or 'C' to get a surprise!"),
+])
+
+onKeyPress("f", () => {
+
+    var foodQuest = ["What is the most popular food in the world?", "what fruit is claimed to be a berry but ultimately isn't?", "What food is commonly eaten in Japan?"];
+
+    var questAn = prompt("Please input a number from 0-2");
+
+    if (questAn === 0) {
+      prompt(foodQuest[0]);
+        if (prompt === "rice") {
+            alert("Correct Answer!");
+        } else {
+            alert("Oops! Refresh the page to try again!");
+        }
+    }
+
+})
+```
+
+This is my first attempt since I wanted to focus on one question only, and you can see how small but complicated the code is; For one, I don't have a new variable attached to the prompt so would it really go through? Not sure.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
