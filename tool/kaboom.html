@@ -8,18 +8,26 @@ text("Click either 'F' or 'C' to get a surprise!"),
 
 onKeyPress("f", () => {
 
-    var foodQuest = ["What is the most popular food in the world?", "what fruit is claimed to be a berry but ultimately isn't?", "What food is commonly eaten in Japan?"];
+var foodQuest = prompt("What is the most popular food in the World?");
 
-    var questAn = prompt("Please input a number from 0-2");
+if (foodQuest === "Rice" || foodQuest === "rice") {
+     alert("Nice job! Rice is the correct answer!.");
 
-    if (questAn === 0) {
-      prompt(foodQuest[0]);
-        if (prompt === "rice") {
-            alert("Correct Answer!");
-        } else {
-            alert("Oops! Refresh the page to try again!");
-        }
-    }
+} else {
+    alert("Sorry, but " + foodQuest + " is not the answer I'm looking for.. Refresh to try again!");
+}
+    // var foodQuest = ["What is the most popular food in the world?", "what fruit is claimed to be a berry but ultimately isn't?", "What food is commonly eaten in Japan?"];
+
+    // var questAn = prompt("Please input a number from 0-2");
+
+    // if (questAn === 0) {
+    //   prompt(foodQuest[0]);
+    //     if (prompt === "rice") {
+    //         alert("Correct Answer!");
+    //     } else {
+    //         alert("Oops! Refresh the page to try again!");
+    //     }
+    // }
 
 })
 

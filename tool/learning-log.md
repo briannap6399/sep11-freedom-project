@@ -238,7 +238,7 @@ onKeyPress("f", () => {
 })
 ```
 
-This is my first attempt since I wanted to focus on one question only, and you can see how small but complicated the code is; For one, I don't have a new variable attached to the prompt so would it really go through? Not sure. For my second attempt, I decided to try and scrap the 2nd prompt, and instead focus on 
+This is my first attempt since I wanted to focus on one question only, and you can see how small but complicated the code is; For one, I don't have a new variable attached to the prompt so would it really go through? Not sure. For my second attempt, I decided to try and scrap the 2nd prompt, and instead focus on just delivering a question upon hitting the 'f' key. For this, the question, one that will be specifically picked from the array I had established, will be the one that I already started implementing; "What is the most popular food in the world?" 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
