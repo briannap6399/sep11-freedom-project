@@ -55,7 +55,7 @@ With the new system in place, all I had to do was set up some conditionals, stat
 
 ## Skill Reflection:
 
-Now with all of that said, what about the skills? Also as previously stated, the 2 skills I wanted to try and enhance ended up being **Embracing Failure** and **Organization** and once again, **Embracing Failure** received the most development, something I'm not surprised by as this whole process is obviously going to take trial and error. Yet with that said, I wanted to pinpoint my original failure with the `foodQuest` array, 
+Now with all of that said, what about the skills? Also as previously stated, the 2 skills I wanted to try and enhance ended up being **Embracing Failure** and **Organization** and once again, **Embracing Failure** received the most development, something I'm not surprised by as this whole process is obviously going to take trial and error. Yet with that said, I wanted to pinpoint my original failure with the `foodQuest` array as a prime example of me taking accountability for my failures but not dwelling on it for too long and instead striving to find a more efficient method to the madness (the `Math.random()` solution that ended up working phenomonally). 
 
 [Previous](entry02.md) | [Next](entry04.md)
 
