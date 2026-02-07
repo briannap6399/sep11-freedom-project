@@ -7,7 +7,7 @@ Wow. It hasn't even felt like a long time, but now I'm officially in the big 202
 
 ## Tinkering Progress:
 
-Before I dive into the exact code, I will say this: Simpler yet efficient is **always** better than elaborate yet convoluted. You might not entirely understand why I'm saying this now, but by the time I'm done demonstrating my progress and 
+Before I dive into the exact code, I will say this: Simpler yet efficient is **always** better than elaborate yet convoluted. You might not entirely understand why I'm saying this now, but by the time I'm done demonstrating my progressions, it might be more easy to understand? I hope so anyways. Now, I had already mentioned `onKeyPress({})` and essentially it can become a function of it's own. By giving the command a specific key to look for, 
 
 ## Skill Reflection:
 
