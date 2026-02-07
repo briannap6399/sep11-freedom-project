@@ -51,8 +51,11 @@ if (randomQuest == 0) {
 }
 ```
 
-With the new system in place, all I had to do was set up some conditionals, stating what would happen if a specific index is called. All indexes upon being called would be given a prompt that states the question, and then they are free to type in their answer. I would've originally asked the reader to insert their answer as fully undercase, but I know that me personally, I'd much rather put in an answer to a question with the first letter as uppercase, hence why there is an `||` (or statement) in between the lowercase and uppercase variations of the correct answer. Regardless of how the answer is inserted however, they'll either be told they answered correctly or not. If the reader wants, they can type in the 'f' key once again 
+With the new system in place, all I had to do was set up some conditionals, stating what would happen if a specific index is called. All indexes upon being called would be given a prompt that states the question, and then they are free to type in their answer. I would've originally asked the reader to insert their answer as fully undercase, but I know that me personally, I'd much rather put in an answer to a question with the first letter as uppercase, hence why there is an `||` (or statement) in between the lowercase and uppercase variations of the correct answer. Regardless of how the answer is inserted however, they'll either be told they answered correctly or not. If the reader wants, they can type in the 'f' key once again in hopes of taking on the question they failed to get correct or get a new one altogether. In each case however, I feel deeply proud of this bit of progress, since it confirms my original thoughts about combining javascript with kaboom!
+
 ## Skill Reflection:
+
+Now with all of that said, what about the skills? 
 
 ## Conclusions:
 
