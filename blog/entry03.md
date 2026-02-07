@@ -46,7 +46,7 @@ if (randomQuest == 0) {
 }
 ```
 
-Admittedly this might seem a lot more complicated to others, but to me this is genuinely pretty easy for me to understand. It starts with the array that is holding my 3 questions: 'What is the most popular food in the world?', 'what fruit is claimed to be a berry but ultimately isn't?' and 'What food is commonly eaten in Japan?'. 
+Admittedly this might seem a lot more complicated to others, but to me this is genuinely pretty easy for me to understand. It starts with the array that is holding my 3 questions: 'What is the most popular food in the world?', 'what fruit is claimed to be a berry but ultimately isn't?' and 'What food is commonly eaten in Japan?'. Now I know I just said there are 3 questions but with the program Javascript and other programming languages use, 0 is counted alongside the other default numbers, meaning instead of starting at 1, it starts at 0. That is why `(foodQuest.length - 1)` exists, since while length wise there are 3 questions, that last question will only be referred to as the **2nd** Index in the array.
 ## Skill Reflection:
 
 ## Conclusions:
