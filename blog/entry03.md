@@ -15,7 +15,7 @@ text("Click either 'F' or 'C' to get a surprise!"),
 ])
 ```
 
-I already planned out I wanted to start with a few different categories of questions (particularly food and or color themed), but due to external circumstances, I only had time to lock in the 'food' category. For this context, it was represented by the F key and as this small `add()` implies, you just had to click the key for one of it's questions. My original plan for the questions were to have the reader decide which question they wanted to answer, essentially giving them 2 prompts to fill out, though I do recall struggling greatly on making it happen: I'd accidentally trip myself up since I wanted the questions stored in an array in order to store them more efficiently compared to typing them out but I was struggling to make the specific question pop up when it was supposed to. As a result, I decided to remedy this problem with a miniature system that I'm already comfortable with: Random Chance.
+I already planned out I wanted to start with a few different categories of questions (particularly food and or color themed), but due to external circumstances, I only had time to lock in the 'food' category. For this context, it was represented by the 'f' key and as this small `add()` implies, you just had to click the key for one of it's questions. My original plan for the questions were to have the reader decide which question they wanted to answer, essentially giving them 2 prompts to fill out, though I do recall struggling greatly on making it happen: I'd accidentally trip myself up since I wanted the questions stored in an array in order to store them more efficiently compared to typing them out but I was struggling to make the specific question pop up when it was supposed to. As a result, I decided to remedy this problem with a miniature system that I'm already comfortable with: Random Chance.
 
 ```js
 var foodQuest = ["What is the most popular food in the world?", "what fruit is claimed to be a berry but ultimately isn't?", "What food is commonly eaten in Japan?"];
@@ -51,7 +51,7 @@ if (randomQuest == 0) {
 }
 ```
 
-With the 
+With the new system in place, all I had to do was set up some conditionals, stating what would happen if a specific index is called. All indexes upon being called would be given a prompt that states the question, and then they are free to type in their answer. I would've originally asked the reader to insert their answer as fully undercase, but I know that me personally, I'd much rather put in an answer to a question with the first letter as uppercase, hence why there is an `||` (or statement) in between the lowercase and uppercase variations of the correct answer. Regardless of how the answer is inserted however, they'll either be told they answered correctly or not. If the reader wants, they can type in the 'f' key once again 
 ## Skill Reflection:
 
 ## Conclusions:
