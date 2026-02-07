@@ -7,7 +7,7 @@ Wow. It hasn't even felt like a long time, but now I'm officially in the big 202
 
 ## Tinkering Progress:
 
-Before I dive into the exact code, I will say this: Simpler yet efficient is **always** better than elaborate yet convoluted. You might not entirely understand why I'm saying this now, but 
+Before I dive into the exact code, I will say this: Simpler yet efficient is **always** better than elaborate yet convoluted. You might not entirely understand why I'm saying this now, but by the time I'm done demonstrating my progress and 
 
 ## Skill Reflection:
 
