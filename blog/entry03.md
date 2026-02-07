@@ -46,7 +46,7 @@ if (randomQuest == 0) {
 }
 ```
 
-
+Admittedly this might seem a lot more complicated to others, but to me this is genuinely pretty easy for me to understand. It starts with the array that is holding my 3 questions: 'What is the most popular food in the world?', 'what fruit is claimed to be a berry but ultimately isn't?' and 'What food is commonly eaten in Japan?'. 
 ## Skill Reflection:
 
 ## Conclusions:
