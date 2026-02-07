@@ -55,7 +55,7 @@ With the new system in place, all I had to do was set up some conditionals, stat
 
 ## Skill Reflection:
 
-Now with all of that said, what about the skills? Also as previously stated, the 2 skills I wanted to try and enhance ended up being **Embracing Failure** and **Organization** and
+Now with all of that said, what about the skills? Also as previously stated, the 2 skills I wanted to try and enhance ended up being **Embracing Failure** and **Organization** and I think it's safe to say one skill onc
 ## Conclusions:
 
 [Previous](entry02.md) | [Next](entry04.md)
