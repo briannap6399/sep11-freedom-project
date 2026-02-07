@@ -7,16 +7,15 @@ Wow. It hasn't even felt like a long time, but now I'm officially in the big 202
 
 ## Tinkering Progress:
 
-Before I dive into the exact code, I will say this: Simpler yet efficient is **always** better than elaborate yet convoluted. You might not entirely understand why I'm saying this now, but by the time I'm done demonstrating my progressions, it might be more easy to understand? I hope so anyways. Now, I had already mentioned `onKeyPress({})` and essentially it can become a function of it's own. By giving the command a specific key to look for, it will wait for that key to be pressed and once that happens, certain events could happen such as making a connected sprite move in a certain direction, changing your screen to another scene, or simply changing the apperance of your sprite: It all just depends on your inputs. For a great comparison, think about the `.addEventListener()` programmers can use in the DOM, and it's essentially that but initiated by Kaboom. Since it was my first time using it without any additional backing, I originally hoped to start simple, mainly 
+Before I dive into the exact code, I will say this: Simpler yet efficient is **always** better than elaborate yet convoluted. You might not entirely understand why I'm saying this now, but by the time I'm done demonstrating my progressions, it might be more easy to understand? I hope so anyways. Now, I had already mentioned `onKeyPress({})` and essentially it can become a function of it's own. By giving the command a specific key to look for, it will wait for that key to be pressed and once that happens, certain events could happen such as making a connected sprite move in a certain direction, changing your screen to another scene, or simply changing the apperance of your sprite: It all just depends on your inputs. For a great comparison, think about the `.addEventListener()` programmers can use in the DOM, and it's essentially that but initiated by Kaboom. Since it was my first time using it without any additional backing, I originally hoped to start simple, mainly with planning out how I could even attempt this:
 
 ```js
 add([
 text("Click either 'F' or 'C' to get a surprise!"),
 ])
-
-
 ```
 
+I already planned out I wanted to start with a few different categories of questions (particularly food and or color themed), but due to external circumstances, I only had time to lock in the 'food' category. For this context, it was represented by the F key and as this small `add()` implies, you just had to click the key for one of it's questions. 
 ## Skill Reflection:
 
 ## Conclusions:
