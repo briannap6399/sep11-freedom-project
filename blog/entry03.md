@@ -55,8 +55,7 @@ With the new system in place, all I had to do was set up some conditionals, stat
 
 ## Skill Reflection:
 
-Now with all of that said, what about the skills? 
-
+Now with all of that said, what about the skills? Also as previously stated, the 2 skills I wanted to refer to ended up being **Embracing Failure** and **Organization**
 ## Conclusions:
 
 [Previous](entry02.md) | [Next](entry04.md)
