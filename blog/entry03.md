@@ -22,31 +22,9 @@ var foodQuest = ["What is the most popular food in the world?", "what fruit is c
 
 onKeyPress("f", () => {
 var randomQuest = Math.ceil(Math.random() * (foodQuest.length - 1));
-if (randomQuest == 0) {
-  var ansZero = prompt(foodQuest[0]);
-    if (ansZero == "rice" || ansZero == "Rice") {
-        alert("That's Correct!");
-    } else {
-        alert(ansZero + " is not the correct answer.. Sorry!");
-    }
-} else if (randomQuest == 1) {
-    var ansOne = prompt(foodQuest[1]);
-      if (ansOne == "strawberries" || ansOne == "Strawberries") {
-          alert("That's Correct!");
-      } else {
-          alert(ansOne + " is not the correct answer.. Sorry!");
-      }
-} else {
-    var ansTwo = prompt(foodQuest[2]);
-      if (ansTwo == "ramen" || ansTwo == "Ramen") {
-         alert("That's Correct!");
-      } else {
-        alert(ansTwo + " is not the correct answer.. Sorry!");
-      }
-}
 ```
 
-Admittedly this might seem a lot more complicated to others, but to me this is genuinely pretty easy for me to understand. It starts with the array that is holding my 3 questions: 'What is the most popular food in the world?', 'what fruit is claimed to be a berry but ultimately isn't?' and 'What food is commonly eaten in Japan?'. Now I know I just said there are 3 questions but with the program Javascript and other programming languages use, 0 is counted alongside the other default numbers, meaning instead of starting at 1, it starts at 0. That is why `(foodQuest.length - 1)` exists, since while length wise there are 3 questions, that last question will only be referred to as the **2nd** Index in the array. Regardless though, that number will represent the highest number the 
+Admittedly this might seem a lot more complicated to others, but to me this is genuinely pretty easy for me to understand. It starts with the array that is holding my 3 questions: 'What is the most popular food in the world?', 'what fruit is claimed to be a berry but ultimately isn't?' and 'What food is commonly eaten in Japan?'. Now I know I just said there are 3 questions but with the program Javascript and other programming languages use, 0 is counted alongside the other default numbers, meaning instead of starting at 1, it starts at 0. That is why `(foodQuest.length - 1)` exists, since while length wise there are 3 questions, that last question will only be referred to as the **2nd** Index in the array. Regardless though, that number will represent the highest number the `Math.random()` will generate to, and since it already starts 0 as it's lowest value, all we'd have to do is round since `Math.random()` always generates a decimal rather than a whole number. This is where `Math.ceil()` comes in, as it rounds to the **greatest** whole number. Alternatively, I could've used `Math.floor()` which rounds to the **lowest** whole number
 ## Skill Reflection:
 
 ## Conclusions:
