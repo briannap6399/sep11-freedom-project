@@ -15,7 +15,9 @@ text("Click either 'F' or 'C' to get a surprise!"),
 ])
 ```
 
-I already planned out I wanted to start with a few different categories of questions (particularly food and or color themed), but due to external circumstances, I only had time to lock in the 'food' category. For this context, it was represented by the F key and as this small `add()` implies, you just had to click the key for one of it's questions. 
+I already planned out I wanted to start with a few different categories of questions (particularly food and or color themed), but due to external circumstances, I only had time to lock in the 'food' category. For this context, it was represented by the F key and as this small `add()` implies, you just had to click the key for one of it's questions. My original plan for the questions were to have the reader decide which question they wanted to answer, essentially giving them 2 prompts to fill out, though I do recall struggling greatly on making it happen: So instead, I decided to take an element I know I'm comfortable with: Random Chance.
+
+
 ## Skill Reflection:
 
 ## Conclusions:
