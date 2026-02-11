@@ -11,7 +11,8 @@
 
 #### Primary Platformer:
    ##### 4 Levels (2-3 Scenes each):
-     - 
+     - [] Design the Stages on Paper (Alberto + Bri)
+     - [] 
 
 
 #### Beyond MVP
