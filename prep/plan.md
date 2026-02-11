@@ -12,13 +12,11 @@
 #### Primary Platformer:
    ##### 4 Levels (2-3 Scenes each):
      - [ ] Design the Levels on Paper (Alberto + Bri)
-     - [ ] Create the Backdrops of Levels (Bri)
-     <!-- Backdrop will be in style of SMB -->
      - [ ] Create the Scenes and 'Pinpoints/Checkpoints' (Alberto + Bri)
-     - [ ] Generate the AI for Enemies (Alberto)
+     - [ ] Generate the AI for Enemies (Alberto) (Due by 04/12)
        - [ ] Connect Flashcards to Damage (Alberto)
-     - [ ] Create the 'Flashcards' (Bri)
-       - [ ] Organize 'Flashcards' into Categories (Bri)
+     - [ ] Create the 'Flashcards' (Bri) (Due by 03/??)
+       - [ ] Organize 'Flashcards' into Categories (Bri) (Due by 03/?? - After Creation)
    ##### Menu Screen:
      - [ ] Design the menu screen on Paper (Alberto + Bri)
      - [ ] Connect Keyboard Keys on Screen (Bri)
@@ -27,6 +25,8 @@
 
      - [ ] Create a 'Character Select Screen' (Alberto + Bri)
        - [ ] Make custom sprites for movement (Alberto + Bri)
+     - [ ] Create the Backdrops of Levels (Bri)
+     <!-- Backdrop will be in style of SMB -->
 
 
 <!-- EXAMPLE
