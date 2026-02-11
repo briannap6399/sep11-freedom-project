@@ -12,11 +12,11 @@
 #### Primary Platformer:
    ##### 4 Levels (2-3 Scenes each):
      - [] Design the Levels on Paper (Alberto + Bri)
-     - [] Create the Backdrops of Levels (Bri)
-     - [] Create the Scenes and 'Pinpoints' (Alberto + Bri)
+     - [] Create the Backdrops of Levels (Bri), What will each backdrop contain? 
+     - [] Create the Scenes and 'Pinpoints/checkpoints' (Alberto + Bri), how many scenes should we make and levels.
      - [] Generate the AI for Enemies (Alberto)
-       - [] Connect Flashcards to Damage (Alberto)
-     - [] Create the 'Flashcards' (Bri)
+       - [] Connect Flashcards to Damage (Alberto) 
+     - [] Create the 'Flashcards' (Bri) 
 
 #### Menu Screen: 
 
