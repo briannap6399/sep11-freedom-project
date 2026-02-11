@@ -13,6 +13,7 @@
    ##### 4 Levels (2-3 Scenes each):
      - [ ] Design the Levels on Paper (Alberto + Bri)
      - [ ] Create the Backdrops of Levels (Bri)
+     <!-- Backdrop will be in style of SMB -->
      - [ ] Create the Scenes and 'Pinpoints/Checkpoints' (Alberto + Bri)
      - [ ] Generate the AI for Enemies (Alberto)
        - [ ] Connect Flashcards to Damage (Alberto)
