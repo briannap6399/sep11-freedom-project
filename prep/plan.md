@@ -11,14 +11,19 @@
 
 #### Primary Platformer:
    ##### 4 Levels (2-3 Scenes each):
-     - [] Design the Stages on Paper (Alberto + Bri)
-     - [] 
+     - [] Design the Levels on Paper (Alberto + Bri)
+     - [] Create the Backdrops of Levels (Bri)
+     - [] Create the Scenes and 'Pinpoints' (Alberto + Bri)
+     - [] Generate the AI for Enemies (Alberto)
+       - [] Connect Flashcards to Damage (Alberto)
+     - [] Create the 'Flashcards' (Bri)
 
+#### Menu Screen: 
 
 #### Beyond MVP
 
-- [ ] Task
-  - [ ] Subtask
+- [ ] Create a 'Character Select Screen' (Alberto + Bri)
+  - [ ] Make custom sprites for movement (Alberto + Bri)
 
 
 <!-- EXAMPLE
