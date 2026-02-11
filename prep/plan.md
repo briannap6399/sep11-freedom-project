@@ -1,16 +1,18 @@
 # Plan
 
-## Tool: 
-## Product: 
-
+## Tool: Kaboom
+## Product: Spanish Learning Platform
+### Additional Partner(s): Alberto Gonzalez Jr. & Brianna 'Bri' Peralta
 ---
 
 ## Timeline
 
-#### MVP
+### MVP
 
-- [ ] Task (deadline: X)
-  - [ ] Subtask (deadline: X)
+#### Primary Platformer:
+   ##### 4 Levels (2-3 Scenes each):
+     - 
+
 
 #### Beyond MVP
 
@@ -49,7 +51,7 @@
 
 <!-- DO NOT USE THIS YET
 
-#### Peer Feedback 
+#### Peer Feedback
 
 | Name | Glows | Grows |
 | -------- | ------- | ------- |
