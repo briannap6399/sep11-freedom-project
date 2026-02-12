@@ -18,8 +18,8 @@
      - [ ] Create the 'Flashcards' (Bri) (Due by 03/16)
        - [ ] Organize 'Flashcards' into Categories (Bri) (Due by 03/29 - After Creation)
    ##### Menu Screen:
-     - [ ] Design the menu screen on Paper (Alberto + Bri)
-     - [ ] Connect Keyboard Keys on Screen (Bri)
+     - [ ] Design the menu screen on Paper (Alberto + Bri) (Due by 03/29)
+     - [ ] Connect Keyboard Keys on Screen (Bri) (Due by 04/03)
 
 ### Beyond MVP:
 
