@@ -12,7 +12,7 @@
 #### Primary Platformer:
    ##### 4 Levels (2-3 Scenes each):
      - [ ] Design the Levels on Paper (Alberto + Bri) (Due by 03/09)
-     - [ ] Create the Scenes and 'Pinpoints/Checkpoints' (Alberto + Bri) (Due by 03/??)
+     - [ ] Create the Scenes and 'Pinpoints/Checkpoints' (Alberto + Bri) (Due by 03/15)
      - [ ] Generate the AI for Enemies (Alberto) (Due by 04/12)
        - [ ] Connect Flashcards to Damage (Alberto) (Due by 04/12)
      - [ ] Create the 'Flashcards' (Bri) (Due by 03/16)
