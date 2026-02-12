@@ -11,12 +11,12 @@
 
 #### Primary Platformer:
    ##### 4 Levels (2-3 Scenes each):
-     - [ ] Design the Levels on Paper (Alberto + Bri)
-     - [ ] Create the Scenes and 'Pinpoints/Checkpoints' (Alberto + Bri)
+     - [ ] Design the Levels on Paper (Alberto + Bri) (Due by 03/09)
+     - [ ] Create the Scenes and 'Pinpoints/Checkpoints' (Alberto + Bri) (Due by 03/??)
      - [ ] Generate the AI for Enemies (Alberto) (Due by 04/12)
-       - [ ] Connect Flashcards to Damage (Alberto)
-     - [ ] Create the 'Flashcards' (Bri) (Due by 03/??)
-       - [ ] Organize 'Flashcards' into Categories (Bri) (Due by 03/?? - After Creation)
+       - [ ] Connect Flashcards to Damage (Alberto) (Due by 04/12)
+     - [ ] Create the 'Flashcards' (Bri) (Due by 03/16)
+       - [ ] Organize 'Flashcards' into Categories (Bri) (Due by 03/29 - After Creation)
    ##### Menu Screen:
      - [ ] Design the menu screen on Paper (Alberto + Bri)
      - [ ] Connect Keyboard Keys on Screen (Bri)
