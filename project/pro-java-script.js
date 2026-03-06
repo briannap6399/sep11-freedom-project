@@ -1,1 +1,3 @@
-add[]
+<script>
+kaboom();
+</script>
