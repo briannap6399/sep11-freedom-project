@@ -9,7 +9,7 @@ text("Click either 'F' or 'C' to get a surprise!"),
 var foodQuest = ["What is the most popular food in the world?", "what fruit is claimed to be a berry but ultimately isn't?", "What food is commonly eaten in Japan?"];
 
 onKeyPress("f", () => {
-var randomQuest = Math.ceil(Math.random() * (foodQuest.length - 1));
+var randomQuest = Math.floor(Math.random() * (3));
 if (randomQuest == 0) {
   var ansZero = prompt(foodQuest[0]);
     if (ansZero === "rice" || ansZero === "Rice") {
