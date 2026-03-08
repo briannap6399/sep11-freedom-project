@@ -72,6 +72,7 @@ scene("warm-up",() => {
 
     add([
         text("Get the coin to win!"),
+        "win-co"
     ])
 
   add([
@@ -79,6 +80,7 @@ scene("warm-up",() => {
     pos(0, height() - 48),
     area(),
     body({ isStatic: true}),
+    "platform"
     ])
      const moveSpeed = 500;
        onKeyDown("right", () => {
@@ -96,21 +98,8 @@ scene("warm-up",() => {
 
        spriteMar.onCollide("treasure", (treasure) => {
         destroy(treasure);
-        go("pop-quiz");
-        })
-     })
 
-scene("pop-quiz",() => {
-
-    const spriteMar = add([
-    sprite("marina"),
-    pos(80,50),
-    scale(.70),
-    area(),
-    body(),
-    ])
-
-     var prompt = alert("What year did the US gain Independence?");
+        var prompt = alert("What year did the US gain Independence?");
           add([
             text("1776"),
             pos(200,300),
@@ -126,21 +115,8 @@ scene("pop-quiz",() => {
             go("victory")
           })
 
-       const moveSpeed = 500;
-       onKeyDown("right", () => {
-       spriteMar.move(moveSpeed,0)
-       })
-       onKeyDown("left", () => {
-       spriteMar.move(-moveSpeed,0)
-       })
-       onKeyDown("down", () => {
-       spriteMar.move(0,moveSpeed)
-       })
-       onKeyDown("up", () => {
-       spriteMar.move(0,-moveSpeed)
-       })
-
-})
+        })
+     })
 
 scene("victory", () => {
     add([

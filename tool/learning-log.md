@@ -386,7 +386,7 @@ scene("victory", () => {
     ])
 })
 ```
-This scene wasn't meant to have much, but it solidifies the idea I had about scene hopping through items. For the final project, I want the player to be able to hop through scenes using little accesskeys such as the coin in this context. To transition correctly, they'd need to answer one Spanish question correctly, progressing them further. 
+This scene wasn't meant to have much, but it solidifies the idea I had about scene hopping through items. For the final project, I want the player to be able to hop through scenes using little accesskeys such as the coin in this context. To transition correctly, they'd need to answer one Spanish question correctly, progressing them further. If they fail to answer correctly, they'd expect to 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
