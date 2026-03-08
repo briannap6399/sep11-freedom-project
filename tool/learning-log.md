@@ -377,7 +377,16 @@ scene("warm-up",() => {
        })
 })
 ```
-There was a lot of `add([])` usage for this portion of the code and maybe there's a way to condense some of them into one massive `add([])`, but for now they'll be separated out like this (and in the future, there will be more comments next to them to tell me and my partner what they do respectively). I took a little bit of code from the chrome dinosaur mini-project (Marina's moveSpeed, and the dimensions for the platform), but what's new is the way the `.onCollide` is used. 
+There was a lot of `add([])` usage for this portion of the code and maybe there's a way to condense some of them into one massive `add([])`, but for now they'll be separated out like this (and in the future, there will be more comments next to them to tell me and my partner what they do respectively). I took a little bit of code from the chrome dinosaur mini-project (Marina's moveSpeed, and the dimensions for the platform), but what's new is the way the `.onCollide` is used. Previously, colliding with something meant game over, especially since the goal of that was to.. Not touch the obstacles. As I've already said however, colliding with the entity (this time called a coin), is good, and you get transitioned into the final but smaller scene of the 2.
+
+```js
+scene("victory", () => {
+    add([
+        text("You did it! Good Job."),
+    ])
+})
+```
+This scene wasn't meant to have much, but it solidifies the idea I had about scene hopping through items. For the final project, I want the player to be able to hop through scenes using little accesskeys such as the coin in this context. To transition correctly, they'd need to answer one Spanish question correctly, progressing them further. 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

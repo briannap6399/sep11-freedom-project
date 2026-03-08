@@ -93,9 +93,15 @@ scene("warm-up",() => {
        })
 
        spriteMar.onCollide("treasure", (treasure) => {
+        var prompt = prompt("What year did the US gain Independence?");
+        if(prompt = "1776") {
         go("victory");
-       })
-})
+        } else {
+        go("warm-up");
+        }
+     })
+  })
+
 
 scene("victory", () => {
     add([
