@@ -386,7 +386,7 @@ scene("victory", () => {
     ])
 })
 ```
-This scene wasn't meant to have much, but it solidifies the idea I had about scene hopping through items. For the final project, I want the player to be able to hop through scenes using little access keys such as the coin in this context. To transition correctly, they'd need to answer one Spanish question correctly, progressing them further. If they fail to answer correctly, they'd expect to either be sent back to the beginning of the level or asked to try again with a differet question! I've been trying to test this idea through some modifications to the original final half of `warm-up`, 
+This scene wasn't meant to have much, but it solidifies the idea I had about scene hopping through items. For the final project, I want the player to be able to hop through scenes using little access keys such as the coin in this context. To transition correctly, they'd need to answer one Spanish question correctly, progressing them further. If they fail to answer correctly, they'd expect to either be sent back to the beginning of the level or asked to try again with a differet question! I've been trying to test this idea through some modifications to the original final half of `warm-up`, but while I have something, I just can't find a way to load Marina in. Perhaps I could try to reference some of the playground parts of Kaboom? I'm not too sure but nevertheless, progress is being made and I am so grateful for that!
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
