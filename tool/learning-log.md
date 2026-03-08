@@ -325,7 +325,59 @@ Marina is brought back to represent the player, and the coin is essentially the 
 
 ![]](image-5.png)
 
-They'll now be brought to the `warm-up` scene as 
+They'll now be brought to the `warm-up` scene as previously mentioned, now being able to see Marina, the coin and a simple platform. The text at the top (which can be moved using `pos()`), briefly explains the win condition: Just simply get the coin. I wanted to make this part nice and easy just to ensure the transition into the next scene was also easy.
+
+```js
+scene("warm-up",() => {
+/* Marina Spite */
+ var spriteMar = add([
+    sprite("marina"),
+    pos(80,50),
+    scale(.70),
+    area(),
+    body(),
+    ])
+
+ /* Coin Sprite */
+    var spriteCoin = add([
+        sprite("coin"),
+        pos(500,300),
+        scale(.50),
+        area(),
+        body(),
+        "treasure"
+    ])
+
+    add([
+        text("Get the coin to win!"),
+    ])
+
+  add([
+    rect(width(), 48),
+    pos(0, height() - 48),
+    area(),
+    body({ isStatic: true}),
+    ])
+     const moveSpeed = 500;
+       onKeyDown("right", () => {
+       spriteMar.move(moveSpeed,0)
+       })
+       onKeyDown("left", () => {
+       spriteMar.move(-moveSpeed,0)
+       })
+       onKeyDown("down", () => {
+       spriteMar.move(0,moveSpeed)
+       })
+       onKeyDown("up", () => {
+       spriteMar.move(0,-moveSpeed)
+       })
+
+       spriteMar.onCollide("treasure", (treasure) => {
+        go("victory");
+       })
+})
+```
+There was a lot of `add([])` usage for this portion of the code and maybe there's a way to condense some of them into one massive `add([])`, but for now that 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
