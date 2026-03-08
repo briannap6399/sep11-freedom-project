@@ -36,13 +36,32 @@ if (randomQuest == 0) {
 })
 
 onKeyPress("c", () => {
-alert("You clicked C!");
-console.log("But why?"); 
+alert("Now loading a new scene..");
+console.log("But why?");
+go("test-sub");
     })
+
+scene("test-sub",() => {
+   setGravity(1300),
+loadSprite("marina", "marina-sprite.png"),
+    const spriteMarina = add([
+    sprite("marina"),
+    pos(80,50),
+    scale(.75),
+    area(),
+    body(),
+   )]
+
+    add([
+        rect(width(), 48),
+        pos(0, height()-48),
+    ])
+})
+
 // setGravity(1300);
 
 //  loadSprite("marina", "marina-sprite.png");
-// // add([
+// add([
 // //     sprite("marina"),
 // //     pos(80,50),
 // //     scale(.5),
