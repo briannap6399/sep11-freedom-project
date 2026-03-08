@@ -37,6 +37,7 @@ onKeyPress("f", () => {
     }
 })
 
+
 /* What happens if you press 'C' */
 
  onKeyPress("c",() => {
@@ -49,15 +50,16 @@ onKeyPress("f", () => {
 //   setGravity(1300),
 
 scene("warm-up",() => {
-/* Marina Spite */
- var spriteMar = add([
+
+    /* Marina Spite */
+
+ const spriteMar = add([
     sprite("marina"),
     pos(80,50),
     scale(.70),
     area(),
     body(),
     ])
-
  /* Coin Sprite */
     var spriteCoin = add([
         sprite("coin"),
@@ -93,9 +95,21 @@ scene("warm-up",() => {
        })
 
        spriteMar.onCollide("treasure", (treasure) => {
-        destroy(treasure)
+        destroy(treasure);
+        go("pop-quiz");
+        })
+     })
 
-        var prompt = alert("What year did the US gain Independence?");
+scene("pop-quiz",() => {
+
+    const spriteMar = add([
+    sprite("marina"),
+    pos(80,50),
+    scale(.70),
+    area(),
+    body(),
+    ])
+     var prompt = alert("What year did the US gain Independence?");
           add([
             text("1776"),
             pos(200,300),
@@ -106,12 +120,12 @@ scene("warm-up",() => {
           pos("300,300"),
           "ans-2"
           ])
+
           spriteMar.onCollide("ans-1",() => {
             go("victory")
           })
-        })
-     })
 
+})
 
 scene("victory", () => {
     add([
