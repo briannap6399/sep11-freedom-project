@@ -306,8 +306,22 @@ Basing my log directly off of what I had did last time (using the F key to do so
 
 ![alt text](image-4.png)
 
-As I was planning out what I wanted to focus my learning log on, I thought back to the final project, which is the platformer. My partner and I have talked several times regarding what we'd like to see in the project, and when coming up with the different levels can play on, we both agreed that we wanted to use scene changes in order to make the level feel a little big. With that being said, I believed it would be fitting to try and create **2** unique scenes: One that a player can get to by clicking the C button, and 
+As I was planning out what I wanted to focus my learning log on, I thought back to the final project, which is the platformer. My partner and I have talked several times regarding what we'd like to see in the project, and when coming up with the different levels can play on, we both agreed that we wanted to use scene changes in order to make the level feel a little big. With that being said, I believed it would be fitting to try and create **2** unique scenes: One that a player can get to by clicking the C button, and one by completing a certain condition. I first decided to do the C-Button Scene, especially since it would take the most amount of time to get right and because it ended up having the most amount of code.
 
+```js
+/* What happens if you press 'C' */
+
+ onKeyPress("c",() => {
+ loadSprite("marina", "marina-sprite.png"),
+ loadSprite("coin", "new-coin.png"),
+ alert("Now Loading a New Scene.");
+ console.log("Patience with this please.");
+ go("warm-up");
+ })
+//   setGravity(1300),
+
+```
+Marina is brought back to represent the player, and the coin is essentially the win condition for the next scene, so for now I'll skip talking about it. Anywa
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
