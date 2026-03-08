@@ -306,7 +306,7 @@ Basing my log directly off of what I had did last time (using the F key to do so
 
 ![alt text](image-4.png)
 
-
+As I was planning out what I wanted to focus my learning log on, I thought back to the final project, which is the platformer. 
 
 <!--
 * Links you used today (websites, videos, etc)
