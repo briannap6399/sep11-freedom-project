@@ -321,7 +321,7 @@ As I was planning out what I wanted to focus my learning log on, I thought back 
 //   setGravity(1300),
 
 ```
-Marina is brought back to represent the player, and the coin is essentially the win condition for the next scene, so for now I'll skip talking about it. Anywa
+Marina is brought back to represent the player, and the coin is essentially the win condition for the next scene, so for now I'll skip talking about it. Anyways the mechanics are similar to that of the F key, though this time the key loads a scene named `warm-up` (since this is pretty much a warm up for what'll be seen in the future). Before linking the main scene and the C-Key together, I did some testing to make sure clicking the C key actually did something, that being with the `alert()` and `console.log()`. Note to self for future projects but this is a great way to test code before jumping right in, unaware it'll even work. But 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
