@@ -93,6 +93,8 @@ scene("warm-up",() => {
        })
 
        spriteMar.onCollide("treasure", (treasure) => {
+        destroy(treasure)
+
         var prompt = alert("What year did the US gain Independence?");
           add([
             text("1776"),
@@ -101,7 +103,7 @@ scene("warm-up",() => {
           ])
           add([
           text("1856"),
-          pos("400,300"),
+          pos("300,300"),
           "ans-2"
           ])
           spriteMar.onCollide("ans-1",() => {
