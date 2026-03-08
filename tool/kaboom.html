@@ -2,67 +2,61 @@
 import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
 kaboom();
 
-// -----------------------------------------------------------------
 add([
 text("Click either 'F' or 'C' to get a surprise!"),
 ])
 
 var foodQuest = ["What is the most popular food in the world?", "what fruit is claimed to be a berry but ultimately isn't?", "What food is commonly eaten in Japan?"];
 
-/* What happens if you press 'F' */
-
 onKeyPress("f", () => {
-    var randomQuest = Math.floor(Math.random() * (3));
-    if (randomQuest == 0) {
-        var ansZero = prompt(foodQuest[0]);
-        if (ansZero === "rice" || ansZero === "Rice") {
-            alert("That's Correct!");
-        } else {
-            alert(ansZero + " is not the correct answer.. Sorry!");
-        }
-        } else if (randomQuest == 1) {
-            var ansOne = prompt(foodQuest[1]);
-            if (ansOne === "strawberry" || ansOne === "Strawberry") {
-                alert("That's Correct!");
-        } else {
-                alert(ansOne + " is not the correct answer.. Sorry!");
-        }
-        } else {
-                var ansTwo = prompt(foodQuest[2]);
-                if (ansTwo === "ramen" || ansTwo === "Ramen") {
-                    alert("That's Correct!");
-        } else {
-                alert(ansTwo + " is not the correct answer.. Sorry!");
-        }
+var randomQuest = Math.floor(Math.random() * (3));
+if (randomQuest == 0) {
+  var ansZero = prompt(foodQuest[0]);
+    if (ansZero === "rice" || ansZero === "Rice") {
+        alert("That's Correct!");
+    } else {
+        alert(ansZero + " is not the correct answer.. Sorry!");
     }
+} else if (randomQuest == 1) {
+    var ansOne = prompt(foodQuest[1]);
+      if (ansOne === "strawberry" || ansOne === "Strawberry") {
+          alert("That's Correct!");
+      } else {
+          alert(ansOne + " is not the correct answer.. Sorry!");
+      }
+} else {
+    var ansTwo = prompt(foodQuest[2]);
+      if (ansTwo === "ramen" || ansTwo === "Ramen") {
+         alert("That's Correct!");
+      } else {
+        alert(ansTwo + " is not the correct answer.. Sorry!");
+      }
+}
+
 })
 
-/* What happens if you press 'C' */
+onKeyPress("c", () => {
+alert("Now loading a new scene..");
+console.log("But why?");
+go("test-sub");
+    })
 
-onKeyPress("c",() => {
 loadSprite("marina", "marina-sprite.png"),
-alert("Now Loading a New Scene."),
-console.log("Patience with this please."),
-
-var spriteM = add[(
+const spriteMarina = add([
     sprite("marina"),
     pos(80,50),
-    scale(.70),
+    scale(.75),
     area(),
     body(),
-)]
+    ])
 
-go("warm-up"),
-setGravity(1300),
-})
+scene("test-sub",() => {
+   setGravity(1300),
 
-scene("warm-up",() => {
-  add[(
-    rect(width(), 48),
-    pos(0, height() - 48),
-    area(),
-    body(),
-  )]
+    add([
+        rect(width(), 48),
+        pos(0, height()-48),
+    ])
 })
 
 // setGravity(1300);

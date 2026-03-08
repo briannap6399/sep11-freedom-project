@@ -39,31 +39,44 @@ onKeyPress("f", () => {
 
 /* What happens if you press 'C' */
 
-onKeyPress("c",() => {
-loadSprite("marina", "marina-sprite.png"),
-alert("Now Loading a New Scene."),
-console.log("Patience with this please."),
+ onKeyPress("c",() => {
+ loadSprite("marina", "marina-sprite.png"),
+ alert("Now Loading a New Scene.");
+ console.log("Patience with this please.");
+ go("warm-up");
+ })
+//   go("warm-up"),
+//   setGravity(1300),
+// })
 
-var spriteM = add[(
+scene("warm-up",() => {
+/* Marina Spite */
+ var spriteMar = add([
     sprite("marina"),
     pos(80,50),
     scale(.70),
     area(),
     body(),
-)]
+    ])
 
-go("warm-up"),
-setGravity(1300),
-})
-
-scene("warm-up",() => {
-  add[(
+  add([
     rect(width(), 48),
     pos(0, height() - 48),
     area(),
     body(),
-  )]
+    ])
+     const moveSpeed = 500;
+       onKeyDown("right", () => {
+       spriteMar.move(moveSpeed,0)
+       })
+       onKeyDown("left", () => {
+       spriteMar.move(-moveSpeed,0)
+       })
 })
+
+const moveSpeed = 500;
+
+
 
 
 </script>
