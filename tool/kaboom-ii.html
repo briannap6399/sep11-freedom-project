@@ -39,6 +39,27 @@ onKeyPress("f", () => {
 /* What happens if you press 'C' */
 
 onKeyPress("c",() => {
+loadSprite("marina", "marina-sprite.png"),
+alert("Now Loading a New Scene."),
+console.log("Patience with this please."),
 
-    
+var spriteM = add[(
+    sprite("marina"),
+    pos(80,50),
+    scale(.70),
+    area(),
+    body(),
+)]
+
+go("warm-up"),
+setGravity(1300),
+})
+
+scene("warm-up",() => {
+  add[(
+    rect(width(), 48),
+    pos(0, height() - 48),
+    area(),
+    body(), 
+  )]
 })
