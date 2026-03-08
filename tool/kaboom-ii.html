@@ -60,6 +60,7 @@ scene("warm-up",() => {
     body(),
     ])
 
+ /* Coin Sprite */
     var spriteCoin = add([
         sprite("coin"),
         pos(500,300),
@@ -69,8 +70,11 @@ scene("warm-up",() => {
         "treasure"
     ])
 
+    add([
+        text("Get the coin to win!"),
+    ])
+
   add([
-    // text("Get the coin to win!"),
     rect(width(), 48),
     pos(0, height() - 48),
     area(),
@@ -91,7 +95,6 @@ scene("warm-up",() => {
        })
 
        spriteMar.onCollide("treasure", (treasure) => {
-        destroy("treasure");
         go("victory");
        })
 })
