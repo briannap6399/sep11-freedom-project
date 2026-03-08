@@ -292,9 +292,15 @@ if (randomQuest == 0) {
 })
 ```
 
-This attempt, while it's a massive chunk of code, actually works incredibly well! It correctly randomly generates one of the 3  questions, and it gives the correct information upon answering correctly/incorrectly. I did have to add an `||` however, since if I were to put in the Uppercase variation of the correct answers, they'd be marked incorrectly. Nevertheless, they work smoothly now, but it confirms my idea beforehand which makes me extremely excited for the future. 
+This attempt, while it's a massive chunk of code, actually works incredibly well! It correctly randomly generates one of the 3  questions, and it gives the correct information upon answering correctly/incorrectly. I did have to add an `||` however, since if I were to put in the Uppercase variation of the correct answers, they'd be marked incorrectly. Nevertheless, they work smoothly now, but it confirms my idea beforehand which makes me extremely excited for the future.
 
 ![example](image-3.png)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Tool: Kaboom
+## Project: Spanish based Platformer
+### 3/09/26 - 1/16/26:
 
 <!--
 * Links you used today (websites, videos, etc)
