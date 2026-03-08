@@ -63,7 +63,7 @@ scene("warm-up",() => {
     rect(width(), 48),
     pos(0, height() - 48),
     area(),
-    body(),
+    body({ isStatic: true}),
     ])
      const moveSpeed = 500;
        onKeyDown("right", () => {
