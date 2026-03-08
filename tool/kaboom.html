@@ -36,21 +36,22 @@ if (randomQuest == 0) {
 })
 
 onKeyPress("c", () => {
-alert("Now loading a new scene..");
-console.log("But why?");
-go("test-sub");
+alert("Now loading a new scene.."),
+console.log("But why?"); 
+go("test-sub"),
     })
 
-scene("test-sub",() => {
-   setGravity(1300),
 loadSprite("marina", "marina-sprite.png"),
-    const spriteMarina = add([
+const spriteMarina = add([
     sprite("marina"),
     pos(80,50),
     scale(.75),
     area(),
     body(),
-   )]
+    ])
+
+scene("test-sub",() => {
+   setGravity(1300),
 
     add([
         rect(width(), 48),
