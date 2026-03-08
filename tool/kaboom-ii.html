@@ -72,6 +72,12 @@ scene("warm-up",() => {
        onKeyDown("left", () => {
        spriteMar.move(-moveSpeed,0)
        })
+       onKeyDown("down", () => {
+       spriteMar.move(0,moveSpeed)
+       })
+       onKeyDown("up", () => {
+       spriteMar.move(0,-moveSpeed)
+       })
 })
 
 const moveSpeed = 500;
