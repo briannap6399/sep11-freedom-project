@@ -377,7 +377,7 @@ scene("warm-up",() => {
        })
 })
 ```
-There was a lot of `add([])` usage for this portion of the code and maybe there's a way to condense some of them into one massive `add([])`, but for now that 
+There was a lot of `add([])` usage for this portion of the code and maybe there's a way to condense some of them into one massive `add([])`, but for now they'll be separated out like this (and in the future, there will be more comments next to them to tell me and my partner what they do respectively). I took a little bit of code from the chrome dinosaur mini-project (Marina's moveSpeed, and the dimensions for the platform), but what's new is the way the `.onCollide` is used. 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
