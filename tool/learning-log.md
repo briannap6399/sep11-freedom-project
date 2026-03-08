@@ -306,7 +306,7 @@ Basing my log directly off of what I had did last time (using the F key to do so
 
 ![alt text](image-4.png)
 
-As I was planning out what I wanted to focus my learning log on, I thought back to the final project, which is the platformer. 
+As I was planning out what I wanted to focus my learning log on, I thought back to the final project, which is the platformer. My partner and I have talked several times regarding what we'd like to see in the project, and when coming up with the different levels can play on, we both agreed that we wanted to use scene changes in order to make the level feel a little big. With that being said, I believed it would be fitting to try and create **2** unique scenes: One that a player can get to by clicking the C button, and 
 
 <!--
 * Links you used today (websites, videos, etc)
