@@ -300,7 +300,13 @@ This attempt, while it's a massive chunk of code, actually works incredibly well
 
 ## Tool: Kaboom
 ## Project: Spanish based Platformer
-### 3/09/26 - 1/16/26:
+### 3/02/26 - 3/09/26:
+
+Basing my log directly off of what I had did last time (using the F key to do some random bouts of trivia) I decided to use the C key instead for a somewhat different experiment.
+
+![alt text](image-4.png)
+
+
 
 <!--
 * Links you used today (websites, videos, etc)
