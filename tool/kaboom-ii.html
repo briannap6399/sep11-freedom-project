@@ -66,6 +66,7 @@ scene("warm-up",() => {
         scale(.50),
         area(),
         body(),
+        "treasure"
     ])
 
   add([
@@ -89,12 +90,17 @@ scene("warm-up",() => {
        spriteMar.move(0,-moveSpeed)
        })
 
-       spriteMar.onCollide("coin", () => {
-        destroy("coin");
+       spriteMar.onCollide("treasure", (treasure) => {
+        destroy("treasure");
         go("victory");
        })
 })
 
+scene("victory", () => {
+    add([
+        text("You did it! Good Job."),
+    ])
+})
 const moveSpeed = 500;
 
 
