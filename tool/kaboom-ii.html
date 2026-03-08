@@ -41,6 +41,7 @@ onKeyPress("f", () => {
 
  onKeyPress("c",() => {
  loadSprite("marina", "marina-sprite.png"),
+ loadSprite("coin", "3D-coin.png"),
  alert("Now Loading a New Scene.");
  console.log("Patience with this please.");
  go("warm-up");
@@ -59,6 +60,14 @@ scene("warm-up",() => {
     body(),
     ])
 
+    var spriteCoin = add([
+        sprite("coin"),
+        pos(400,600),
+        scale(.50),
+        area(),
+        body(),
+    ])
+    
   add([
     rect(width(), 48),
     pos(0, height() - 48),
