@@ -69,6 +69,7 @@ scene("warm-up",() => {
     ])
 
   add([
+    // text("Get the coin to win!"),
     rect(width(), 48),
     pos(0, height() - 48),
     area(),
@@ -86,6 +87,11 @@ scene("warm-up",() => {
        })
        onKeyDown("up", () => {
        spriteMar.move(0,-moveSpeed)
+       })
+
+       spriteMar.onCollide("coin", () => {
+        destroy("coin");
+        go("victory");
        })
 })
 
