@@ -5,7 +5,15 @@
 <script type="module">
 
 import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
+function setup() {
+    createCanvas(1000,600);
+}
 
+function draw() {
+    background('skyblue');
+    rect(230,400,300,200);
+    console.log(mouseX,mouseY);
+}
 kaboom();
 
 add([
@@ -19,27 +27,20 @@ onKeyPress("b", () => {
     go("categories");
 })
 
+loadSprite()
 scene("categories", () => {
 
     add([
-        background('skyblue'),
     ])
     add([
-        text("Vocabularly"),
+        text("Vocabulary"),
         pos(200,300),
         "vocab"
     ])
     add([
         text("Conjugations"),
         pos(800,300),
+        "conjugation"
     ])
 })
-function setup() {
-    createCanvas(1000,600);
-}
-
-function draw() {
-    rect(230,400,300,200);
-    console.log(mouseX,mouseY);
-}
 </script>
