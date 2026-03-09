@@ -20,6 +20,10 @@ onKeyPress("b", () => {
 })
 
 scene("categories", () => {
+
+    add([
+        background('skyblue'),
+    ])
     add([
         text("Vocabularly"),
         pos(200,300),
@@ -27,7 +31,7 @@ scene("categories", () => {
     ])
     add([
         text("Conjugations"),
-        pos(400,300),
+        pos(800,300),
     ])
 })
 function setup() {
