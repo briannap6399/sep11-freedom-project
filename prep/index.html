@@ -27,7 +27,14 @@ onKeyPress("b", () => {
     go("categories");
 })
 
-// loadSprite(cursor, ../project-images/)
+loadSprite("cursor", "../project-images/cursor.png");
+
+var cursor = add([
+   sprite("cursor"),
+   scale(.50),
+   area(),
+   body(),
+])
 scene("categories", () => {
 
     add([
