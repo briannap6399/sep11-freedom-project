@@ -36,11 +36,19 @@ scene("categories", () => {
         text("Vocabulary"),
         pos(200,300),
         "vocab"
+        area()
+        body()
     ])
     add([
         text("Conjugations"),
         pos(800,300),
         "conjugation"
+        area()
+        body()
     ])
+
+    mousePos().onCollide("vocabulary",() => {
+        console.log("Making sure this works")
+    })
 })
 </script>
