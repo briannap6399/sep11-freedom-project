@@ -13,15 +13,29 @@ add([
     pos(450, 80),
 ]);
 
+
 onKeyPress("b", () => {
     alert("Making sure this works");
+    go("categories");
 })
 
+scene("categories", () => {
+    add([
+        text("Vocabularly"),
+        pos(200,300),
+        "vocab"
+    ])
+    add([
+        text("Conjugations"),
+        pos(400,300),
+    ])
+})
 function setup() {
     createCanvas(1000,600);
 }
 
 function draw() {
     rect(230,400,300,200);
+    console.log(mouseX,mouseY);
 }
 </script>
