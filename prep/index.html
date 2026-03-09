@@ -1,0 +1,27 @@
+
+
+
+
+<script type="module">
+
+import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
+
+kaboom();
+
+add([
+    text("Press 'B' to play."),
+    pos(450, 80),
+]);
+
+onKeyPress("b", () => {
+    alert("Making sure this works");
+})
+
+function setup() {
+    createCanvas(1000,600);
+}
+
+function draw() {
+    rect(230,400,300,200);
+}
+</script>
