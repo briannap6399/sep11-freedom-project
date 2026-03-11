@@ -39,10 +39,10 @@
         <script src="script.js"></script>
         <script src="https://unpkg.com/kaboom@3000.0.1/dist/kaboom.js"></script>
          <script>
-           kaboom();
            var playBox = document.querySelector('#play-box');
            playBox.addEventListener('click', function(){
              console.log('I hope this works.');
+              kaboom();
              go("categories");
            })
 
@@ -67,6 +67,7 @@
             area(),
             body(),
             ])
+             */
             scene("categories", () => {
 
             add([
@@ -86,7 +87,6 @@
                 console.log("Making sure this works");
             })
             })
-        */
    </script>
  </body>
 </html>
