@@ -50,11 +50,12 @@
 
            add([
             text("Please Press this box to try the game."),
+            area(),
             "starter"
            ])
 
-           var testOpt = document.querySelector("starter");
-           testOpt.addEventListener('click', function(){
+         var testOpt = document.querySelector("starter");
+           testOpt.onClick(() => {
             go("categories");
            })
 
