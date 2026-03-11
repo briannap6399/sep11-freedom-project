@@ -49,12 +49,14 @@
            kaboom();
 
            add([
-            text("Please Press this box to try the game.")
+            text("Please Press this box to try the game."),
             "starter"
            ])
 
            var testOpt = document.querySelector("starter");
-           
+           testOpt.addEventListener('click', function(){
+            go("categories");
+           })
 
             scene("categories", () => {
 
