@@ -4,7 +4,7 @@ kaboom();
 // ------------------------------------------------------------------------------------------
 
 var conListQues = ["Hablar; Yo (Present Tense)", "Vivir; El (Present Tense)","Salir; Nosotras (Present Tense)","Beber; Ella (Present Tense)","Pintar; Ustedes (Present Tense)"];
-var conAnsQues = ["Hablo","Vive","Salemas","Bebe","Pintan"]
+var conListAns = ["Hablo","Vive","Salemas","Bebe","Pintan"]
 console.log(conListQues);
 add([
     text("Click here to play!"),
@@ -29,11 +29,16 @@ scene("option-sect",() => {
         "conjugation"
     ])
 
-    onClick("vocab", () => prompt(conListQues[randi(0,4)]));
+    onClick("vocab", () => go("test-page"));
 
-    if(prompt = conAnsQues[conListQues[randi(0,4)]]) {
+    scene("test-page",() => {
+       var quesNum = randi(4);
+       var ques = prompt(conListQues[quesNum]);
+        if(ques = conListAns[quesNum]) {
         console.log("That's correct!");
     }
+    })
+
 
 })
 
