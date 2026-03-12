@@ -4,6 +4,7 @@ kaboom();
 // ------------------------------------------------------------------------------------------
 
 var conListQues = ["Hablar; Yo (Present Tense)", "Vivir; El (Present Tense)","Salir; Nosotras (Present Tense)","Beber; Ella (Present Tense)","Pintar; Ustedes (Present Tense)"];
+var conAnsQues = ["Hablo","Vive","Salemas","Bebe","Pintan"]
 console.log(conListQues);
 add([
     text("Click here to play!"),
@@ -28,9 +29,11 @@ scene("option-sect",() => {
         "conjugation"
     ])
 
-    // var conListAns = Math.Floor(Math.random()*(5));
+    onClick("vocab", () => prompt(conListQues[randi(0,4)]));
 
-    onClick("vocab", () => prompt(conListQues[Math.Floor(Math.random()*(5))]));
+    if(prompt = conAnsQues[conListQues[randi(0,4)]]) {
+        console.log("That's correct!");
+    }
 
 })
 
