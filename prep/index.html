@@ -32,10 +32,12 @@ scene("option-sect",() => {
     onClick("vocab", () => go("test-page"));
 
     scene("test-page",() => {
-       var quesNum = randi(4);
+       var quesNum = randi(0,4);
        var ques = prompt(conListQues[quesNum]);
         if(ques = conListAns[quesNum]) {
         console.log("That's correct!");
+    } else {
+        console.log("Study Harder Bozo.")
     }
     })
 
