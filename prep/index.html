@@ -53,6 +53,8 @@ scene("plat-one",() => {
       body({isStatic: true}),
     ])
 
+    /* Moves for the sprite */
+
     onKeyDown("left",() => {
         cursSprite.move(-movSpeed,0);
     })
@@ -62,11 +64,14 @@ scene("plat-one",() => {
     })
 
     onKeyDown("space",() => {
-        cursSprite.move(0,-movSpeed);
-
+        if(cursSprite.isGrounded()) {
+          cursSprite.jump
+        }
     })
 
-
+     onKeyDown("up",() => {
+        cursSprite.doubleJump();
+     })
 })
 
     // scene("test-page",() => {
