@@ -1,5 +1,5 @@
 # Entry 4: Progress Report #2
-##### Brianna Peralta on March 10th, 2026 (03/13/26)
+##### Brianna Peralta on March 10th, 2026 (03/10/26)
 
 ## Main Information:
 
