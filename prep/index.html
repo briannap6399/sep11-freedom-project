@@ -7,6 +7,14 @@ var conListQues = ["Hablar; Yo (Present Tense)", "Vivir; El (Present Tense)","Sa
 var conListAns = ["Hablo","Vive","Salemas","Bebe","Pintan"]
 console.log(conListQues);
 setGravity(1300);
+var cursSprite = add([
+        sprite("cursor"),
+        scale(.10),
+        area(),
+        body(),
+        pos(200,100),
+        "player"
+    ])
 
 add([
     text("Click here to play!"),
@@ -33,19 +41,8 @@ scene("option-sect",() => {
 
     onClick("vocab", () => go("plat-one"));
 
-loadSprite("cursor", "/project-images/cursor.png");
-
 scene("plat-one",() => {
  loadSprite("cursor", "/project-images/cursor.png");
-
-     var cursSprite = add([
-        sprite("cursor"),
-        scale(.10),
-        area(),
-        body(),
-        pos(200,100),
-        "player"
-    ])
 
     add([
       rect(width(), 48),
