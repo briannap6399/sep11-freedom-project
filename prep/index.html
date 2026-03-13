@@ -29,17 +29,27 @@ scene("option-sect",() => {
         "conjugation"
     ])
 
-    onClick("vocab", () => go("test-page"));
+    onClick("vocab", () => go("plat-one"));
 
-    scene("test-page",() => {
-       var quesNum = randi(0,4);
-       var ques = prompt(conListQues[quesNum]);
-        if(ques == conListAns[quesNum]) {
-        console.log("That's correct!");
-    } else {
-        console.log("Study Harder Bozo.")
-    }
-    })
+    loadSprite("cursor", "../project-images/cursor.png");
+
+    var cursSprite = add([
+        sprite("cursor"),
+        scale(.75),
+        area(),
+        body(),
+        pos(200,100),
+    ])
+
+    // scene("test-page",() => {
+    //    var quesNum = randi(0,4);
+    //    var ques = prompt(conListQues[quesNum]);
+    //     if(ques == conListAns[quesNum]) {
+    //     console.log("That's correct!");
+    // } else {
+    //     console.log("Study Harder Bozo.")
+    // }
+    // })
 
 
 })
