@@ -9,7 +9,7 @@ var conListQues = ["Hablar; Yo (Present Tense)", "Vivir; El (Present Tense)","Sa
 var conListAns = ["Hablo","Vive","Salemas","Bebe","Pintan"]
 console.log(conListQues);
 var movSpeed = 500;
-setGravity(1300);
+setGravity(600);
 
 add([
     text("Click here to play!"),
@@ -61,9 +61,9 @@ scene("plat-one",() => {
         cursSprite.move(movSpeed,0);
     })
 
-    onKeyDown("up",() => {
+    onKeyDown("space",() => {
         cursSprite.move(0,-movSpeed);
-        
+
     })
 
 
