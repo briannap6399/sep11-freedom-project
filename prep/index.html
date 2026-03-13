@@ -34,7 +34,7 @@ scene("option-sect",() => {
     scene("test-page",() => {
        var quesNum = randi(0,4);
        var ques = prompt(conListQues[quesNum]);
-        if(ques = conListAns[quesNum]) {
+        if(ques == conListAns[quesNum]) {
         console.log("That's correct!");
     } else {
         console.log("Study Harder Bozo.")
