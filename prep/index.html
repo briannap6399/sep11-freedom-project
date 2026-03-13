@@ -3,18 +3,13 @@ import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
 kaboom();
 // ------------------------------------------------------------------------------------------
 
+/* Setting up Variables */
+
 var conListQues = ["Hablar; Yo (Present Tense)", "Vivir; El (Present Tense)","Salir; Nosotras (Present Tense)","Beber; Ella (Present Tense)","Pintar; Ustedes (Present Tense)"];
 var conListAns = ["Hablo","Vive","Salemas","Bebe","Pintan"]
 console.log(conListQues);
+var movSpeed = 500;
 setGravity(1300);
-var cursSprite = add([
-        sprite("cursor"),
-        scale(.10),
-        area(),
-        body(),
-        pos(200,100),
-        "player"
-    ])
 
 add([
     text("Click here to play!"),
@@ -43,13 +38,28 @@ scene("option-sect",() => {
 
 scene("plat-one",() => {
  loadSprite("cursor", "/project-images/cursor.png");
+ var cursSprite = add([
+        sprite("cursor"),
+        scale(.10),
+        area(),
+        body(),
+        pos(200,100),
 
+    ])
     add([
       rect(width(), 48),
       pos(0,height() - 48),
       area(),
       body({isStatic: true}),
     ])
+
+    onKeyDown("left",() => {
+        cursSprite.move(-movSpeed,0);
+    })
+
+    onKeyDown("right",() => {
+        cursSprite.move(movSpeed,0);
+    })
 
 })
 
