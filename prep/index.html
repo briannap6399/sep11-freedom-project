@@ -6,6 +6,8 @@ kaboom();
 var conListQues = ["Hablar; Yo (Present Tense)", "Vivir; El (Present Tense)","Salir; Nosotras (Present Tense)","Beber; Ella (Present Tense)","Pintar; Ustedes (Present Tense)"];
 var conListAns = ["Hablo","Vive","Salemas","Bebe","Pintan"]
 console.log(conListQues);
+setGravity(1300);
+
 add([
     text("Click here to play!"),
     pos(500,250),
@@ -31,15 +33,28 @@ scene("option-sect",() => {
 
     onClick("vocab", () => go("plat-one"));
 
-    loadSprite("cursor", "/project-images/cursor.png");
+loadSprite("cursor", "/project-images/cursor.png");
 
-    var cursSprite = add([
+scene("plat-one",() => {
+ loadSprite("cursor", "/project-images/cursor.png");
+
+     var cursSprite = add([
         sprite("cursor"),
-        scale(.75),
+        scale(.10),
         area(),
         body(),
         pos(200,100),
+        "player"
     ])
+
+    add([
+      rect(width(), 48),
+      pos(0,height() - 48),
+      area(),
+      body({ifStatic: true}),
+    ])
+
+})
 
     // scene("test-page",() => {
     //    var quesNum = randi(0,4);
