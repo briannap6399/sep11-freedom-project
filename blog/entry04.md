@@ -3,6 +3,8 @@
 
 ## Main Information:
 
+Ladies, gentlemen, and everyone in between, welcome to the homestretch of SEP (Technically it's not really the homestretch, but it's one of the peaks of the Freedom Project since this is where the main project is getting closer to being finished)! As of writing, the main project will be due on ***April 
+
 ## Current Events:
 
 ## The Engineering Design Process(EDP):
