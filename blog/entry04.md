@@ -39,7 +39,7 @@ For the rest of the blogs, I will not repeat the steps of the ***EDP***, so for 
 * **7) Improve as needed**
 * **8) Communicate the Results**
 
-This is certainly an easier call compared to the last 2 Blogs, especially since this whole blog is all about my progress on the project as awhole. Right now, my partner and I are on ***Step 5: Create a Prototype***, though we do also alternate with ***Step 6) Test and Evaluate the Prototype*** as, at least in my opinion, it would be much better to test as we go along with creation.
+This is certainly an easier call compared to the last 2 Blogs, especially since this whole blog is all about my progress on the project as awhole. Right now, my partner and I are on ***Step 5: Create a Prototype***, though we do also alternate with ***Step 6: Test and Evaluate the Prototype*** as, at least in my opinion, it would be much better to test as we go along with creation.
 
 ## Skill Reflection & Conclusion:
 
