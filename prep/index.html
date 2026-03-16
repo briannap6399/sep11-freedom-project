@@ -39,6 +39,15 @@ scene("option-sect",() => {
 scene("plat-one",() => {
  loadSprite("cursor", "/project-images/cursor.png");
  loadBean()
+
+ add([
+    sprite("bean"),
+    scale(.75),
+    area(),
+    body(),
+    pos(600,100),
+    "enemy"
+ ])
  var cursSprite = add([
         sprite("cursor"),
         scale(.10),
