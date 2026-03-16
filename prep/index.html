@@ -37,6 +37,8 @@ scene("option-sect",() => {
     onClick("vocab", () => go("plat-one"));
 
 scene("plat-one",() => {
+/* Necessary Sprites */
+
  loadSprite("cursor", "/project-images/cursor.png");
  loadBean()
 
@@ -45,15 +47,18 @@ scene("plat-one",() => {
     scale(.75),
     area(),
     body(),
-    pos(600,100),
+    pos(1000,100),
     "enemy"
  ])
+
  var cursSprite = add([
         sprite("cursor"),
         scale(.10),
         area(),
         body(),
         pos(0,100),
+
+/* Platform */
 
     ])
     add([
@@ -79,17 +84,20 @@ scene("plat-one",() => {
         }
     })
 
+cursSprite.onCollide("enemy",() => {
+    go("test-page"),
+    })
 })
 
-    // scene("test-page",() => {
-    //    var quesNum = randi(0,4);
-    //    var ques = prompt(conListQues[quesNum]);
-    //     if(ques == conListAns[quesNum]) {
-    //     console.log("That's correct!");
-    // } else {
-    //     console.log("Study Harder Bozo.")
-    // }
-    // })
+    scene("test-page",() => {
+       var quesNum = randi(0,4);
+       var ques = prompt(conListQues[quesNum]);
+        if(ques == conListAns[quesNum]) {
+        console.log("That's correct!");
+    } else {
+        console.log("Study Harder Bozo.")
+    }
+    })
 
 
 })
