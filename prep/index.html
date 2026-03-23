@@ -65,7 +65,7 @@ var checkpoint = add([
     sprite("checkpoint"),
     scale(.50),
     area(),
-    body(),
+    body({isStatic: true}),
     pos(1100,100),
 ])
 
@@ -113,9 +113,8 @@ var checkpoint = add([
         })
 
     cursSprite.onCollide("checkpoint",() => {
-        alert("Let's test you for good.");
-        go("check-point-con");
-    })
+        go("status-con");
+        })
   })
 })
 
