@@ -9,7 +9,7 @@ var conListQues = ["Hablar; Yo (Present Tense)", "Vivir; El (Present Tense)","Sa
 var conListAns = ["Hablo","Vive","Salimos","Bebe","Pintan", "Comen", "Tienes", "Eschucho", "Somos", "Hace", "Van"];
 console.log(conListQues);
 var movSpeed = 500;
-var enemSpeed = 400; 
+var enemSpeed = 400;
 setGravity(1000);
 
 add([
@@ -122,7 +122,7 @@ var checkpoint = add([
  scene("status-con",() => {
        var quesNum = randi(0,12);
        var ques = prompt(conListQues[quesNum]);
-        if(ques == conListAns[quesNum]) {
+        if(ques == conListAns[quesNum] || ques == conListAns[quesNum].lowerCase) {
         alert("That's correct!");
         go("plat-one-con");
 
