@@ -393,6 +393,110 @@ This scene wasn't meant to have much, but it solidifies the idea I had about sce
 ## Tool: Kaboom
 ## Project: Spanish based Platformer
 ### 3/16/26 - 3/23/26:
+
+This week has honestly been a little rough for me, but I can't just give up now. I've been taking some of the code from my past experiments and starting to put it together for the actual project itself. Specifically, I spent as much time as I could solidifying the formatting for levels in the program, and the conditions necessary to progress.
+
+```js
+scene("plat-one-con",() => {
+/* Necessary Sprites */
+
+ loadSprite("cursor", "/project-images/cursor.png"); // Player Sprite (Temporary)
+ loadSprite("checkpoint", "/project-images/checkpoint.png"); // Gateway to Levels
+ loadBean()
+
+ add([
+    sprite("bean"),
+    scale(.75),
+    area(),
+    body(),
+    pos(1000,100),
+    "enemy"
+ ])
+
+ var cursSprite = add([
+        sprite("cursor"),
+        scale(.10),
+        area(),
+        body(),
+        pos(0,100),
+ ])
+
+var checkpoint = add([
+    sprite("checkpoint"),
+    scale(.50),
+    area(),
+    body({isStatic: true}),
+    pos(1100,100),
+])
+
+/* Platforms*/
+
+    add([
+      rect(width(), 48),
+      pos(0,height() - 48),
+      area(),
+      body({isStatic: true}),
+    ])
+
+    add([
+        rect(300,48),
+        pos(900,300),
+        area(),
+        body({isStatic: true}),
+     ])
+
+     add([
+        rect(100,100),
+        pos(600,400),
+        area(),
+        body({isStatic: true}),
+     ])
+
+    /* Moves for the sprite */
+
+    onKeyDown("left",() => {
+        cursSprite.move(-movSpeed,0);
+    })
+
+    onKeyDown("right",() => {
+        cursSprite.move(movSpeed,0);
+    })
+
+    onKeyDown("space",() => {
+        if(cursSprite.isGrounded()) {
+          cursSprite.jump();
+        }
+    })
+
+    cursSprite.onCollide("enemy",() => {
+        go("status-con");
+        })
+
+    cursSprite.onCollide("checkpoint",() => {
+        alert("Let's test you for good.");
+        go("check-point-con");
+    })
+  })
+})
+```
+
+From what I have already, this platform level is for Conjugations, which is essentially taking a verb from the Spanish Library and modifying it's ending depending on the subject of the sentence. There are 2 different ways to be tested, through collision with the "checkpoint" (in the program, it's a portal), or through collision with an "enemy", but regardless of the circumstance, you are prompted near identically.
+
+```js
+
+    scene("check-point-con",() => {
+         var quesNum = randi(0,4);
+       var ques = prompt(conListQues[quesNum]);
+        if(ques == conListAns[quesNum]) {
+        alert("That's correct! You're ready to move to the next level!");
+        go("plat-one-con");
+          } else {
+        alert("You'll need to try again..");
+        go("plat-one-con");
+    }
+```
+
+This code is admittedly pretty simple to what the enemy collision looks like, with the main difference being the fact that, when it's created, the correct answer will lead you to scene `plat-two-con`, which will repeat the cycle of trying to reach the portal without touching the enemy. Beyond this however, I spent some time working on some organizing changes: For one, the current existing scenes now have modified names and additional pieces to make it stand out for the subject they fall under. People who look into the code will see scenes being labeled with 'con' at the end to indicate they're for the "conjugation" route, and this same idea will apply to the Vocabulary route when it's ready to be worked on (which hopefully will be this week).
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

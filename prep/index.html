@@ -21,25 +21,26 @@ onClick("title-card", () => go("option-sect")),
 
 scene("option-sect",() => {
     add([
-        text("Vocabulary"),
-        pos(250,250),
-        area(),
-        "vocab"
-    ])
-
-    add([
         text("Conjugation"),
-        pos(800,250),
+        pos(250,250),
         area(),
         "conjugation"
     ])
 
-    onClick("vocab", () => go("plat-one"));
+    add([
+        text("Vocab"),
+        pos(800,250),
+        area(),
+        "vocab"
+    ])
 
-scene("plat-one",() => {
+    onClick("conjugation", () => go("plat-one-con"));
+
+scene("plat-one-con",() => {
 /* Necessary Sprites */
 
- loadSprite("cursor", "/project-images/cursor.png");
+ loadSprite("cursor", "/project-images/cursor.png"); // Player Sprite (Temporary)
+ loadSprite("checkpoint", "/project-images/checkpoint.png"); // Gateway to Levels
  loadBean()
 
  add([
@@ -57,16 +58,38 @@ scene("plat-one",() => {
         area(),
         body(),
         pos(0,100),
+ ])
 
-/* Platform */
+var checkpoint = add([
+    sprite("checkpoint"),
+    scale(.50),
+    area(),
+    body(),
+    pos(1100,100),
+])
 
-    ])
+/* Platforms*/
+
     add([
       rect(width(), 48),
       pos(0,height() - 48),
       area(),
       body({isStatic: true}),
     ])
+
+    add([
+        rect(300,48),
+        pos(900,300),
+        area(),
+        body({isStatic: true}),
+     ])
+
+     add([
+        rect(100,100),
+        pos(600,400),
+        area(),
+        body({isStatic: true}),
+     ])
 
     /* Moves for the sprite */
 
@@ -84,23 +107,41 @@ scene("plat-one",() => {
         }
     })
 
-cursSprite.onCollide("enemy",() => {
-    go("test-page");
+    cursSprite.onCollide("enemy",() => {
+        go("status-con");
+        })
+
+    cursSprite.onCollide("checkpoint",() => {
+        alert("Let's test you for good.");
+        go("check-point-con");
     })
-})
+  })
 })
 
- scene("test-page",() => {
+ scene("status-con",() => {
        var quesNum = randi(0,4);
        var ques = prompt(conListQues[quesNum]);
         if(ques == conListAns[quesNum]) {
         alert("That's correct!");
-        go("plat-one");
+        go("plat-one-con");
 
     } else {
         alert("Study Harder Bozo.");
-        go("plat-one");
+        go("plat-one-con");
     }
+    })
+
+    scene("check-point-con",() => {
+         var quesNum = randi(0,4);
+       var ques = prompt(conListQues[quesNum]);
+        if(ques == conListAns[quesNum]) {
+        alert("That's correct! You're ready to move to the next level!");
+        go("plat-one-con");
+          } else {
+        alert("You'll need to try again..");
+        go("plat-one-con");
+    }
+
     })
 
 
