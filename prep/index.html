@@ -88,20 +88,21 @@ cursSprite.onCollide("enemy",() => {
     go("test-page");
     })
 })
+})
 
-    scene("test-page",() => {
+ scene("test-page",() => {
        var quesNum = randi(0,4);
        var ques = prompt(conListQues[quesNum]);
         if(ques == conListAns[quesNum]) {
-        console.log("That's correct!");
+        alert("That's correct!");
+        go("plat-one");
+
     } else {
-        console.log("Study Harder Bozo.");
+        alert("Study Harder Bozo.");
         go("plat-one");
     }
     })
 
-
-})
 
 
 </script>
