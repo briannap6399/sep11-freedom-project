@@ -120,9 +120,9 @@ var checkpoint = add([
 })
 
  scene("status-con",() => {
-       var quesNum = randi(0,12);
+       var quesNum = randi(0,11);
        var ques = prompt(conListQues[quesNum]);
-        if(ques == conListAns[quesNum] || ques == conListAns[quesNum].lowerCase) {
+        if(ques == conListAns[quesNum] || ques == conListAns[quesNum].toLowerCase) {
         alert("That's correct!");
         go("plat-one-con");
 
@@ -133,7 +133,7 @@ var checkpoint = add([
     })
 
     scene("check-point-con",() => {
-         var quesNum = randi(0,12);
+         var quesNum = randi(0,11);
        var ques = prompt(conListQues[quesNum]);
         if(ques == conListAns[quesNum]) {
         alert("That's correct! You're ready to move to the next level!");
