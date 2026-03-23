@@ -67,6 +67,7 @@ var checkpoint = add([
     area(),
     body({isStatic: true}),
     pos(1100,100),
+    "checkpoint"
 ])
 
 /* Platforms*/
@@ -113,7 +114,8 @@ var checkpoint = add([
         })
 
     cursSprite.onCollide("checkpoint",() => {
-        go("status-con");
+        alert("Let's test your knowledge!");
+        go("check-point-con");
         })
   })
 })
