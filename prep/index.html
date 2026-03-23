@@ -119,7 +119,7 @@ var checkpoint = add([
 })
 
  scene("status-con",() => {
-       var quesNum = randi(0,4);
+       var quesNum = randi(0,12);
        var ques = prompt(conListQues[quesNum]);
         if(ques == conListAns[quesNum]) {
         alert("That's correct!");
@@ -132,7 +132,7 @@ var checkpoint = add([
     })
 
     scene("check-point-con",() => {
-         var quesNum = randi(0,4);
+         var quesNum = randi(0,12);
        var ques = prompt(conListQues[quesNum]);
         if(ques == conListAns[quesNum]) {
         alert("That's correct! You're ready to move to the next level!");
