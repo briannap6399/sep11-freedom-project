@@ -497,6 +497,14 @@ From what I have already, this platform level is for Conjugations, which is esse
 ```
 
 This code is admittedly pretty simple to what the enemy collision looks like, with the main difference being the fact that, when it's created, the correct answer will lead you to scene `plat-two-con`, which will repeat the cycle of trying to reach the portal without touching the enemy. Beyond this however, I spent some time working on some organizing changes: For one, the current existing scenes now have modified names and additional pieces to make it stand out for the subject they fall under. People who look into the code will see scenes being labeled with 'con' at the end to indicate they're for the "conjugation" route, and this same idea will apply to the Vocabulary route when it's ready to be worked on (which hopefully will be this week).
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Tool: Kaboom
+## Project: Spanish based Platformer
+### 3/23/26 - 3/30/26:
+
+This week, I decided to add more prompts and answers to the `conjugation` arrays. I'm also in the progress of re-working the 'checkpoint', and making sure it segways into a new scene. Right now, it's only an object that the player can push around which is definitely not what it should be doing. Past this however, I'm also trying to get the AI to move, since it's stagnant right now and I'm going to use some time this week to start creating the `vocabulary` arrays.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
