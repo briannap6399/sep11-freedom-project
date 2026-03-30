@@ -10,6 +10,7 @@ var conListAns = ["Hablo","Vive","Salimos","Bebe","Pintan", "Comen", "Tienes", "
 console.log(conListQues);
 var vocabListQues = ["Language", "Escuela", "Night", "Trabajando", "To Study", "Maletas", "To Travel", "Communidad", "Future"];
 var vocabListAns = ["Idioma", "School", "Noche", "Working", "Estudiar", "Suitcases", "Viajar", "Community", "Futuro"]
+console.log
 var movSpeed = 500;
 // var enemSpeed = 400;
 setGravity(1000);
@@ -39,7 +40,6 @@ scene("option-sect",() => {
 
     onClick("conjugation", () => go("plat-one-con"));
     onClick("vocab",() => go("plat-one-voc"));
-)
     scene("plat-one-con",() => {
 /* Necessary Sprites */
 
@@ -155,7 +155,7 @@ var checkpoint = add([
         if(quesTwo == vocabListAns[quesNumVoc]) {
             alert("Good job!");
         } else {
-            alert("Doesn't work.. Sorry!"); 
+            alert("Doesn't work.. Sorry!");
         }
 
     })
