@@ -8,8 +8,8 @@ kaboom();
 var conListQues = ["Hablar; Yo (Present Tense)", "Vivir; El (Present Tense)","Salir; Nosotras (Present Tense)","Beber; Ella (Present Tense)","Pintar; Ustedes (Present Tense)", "Comer; Ellas (Present Tense)", "Tener; Tu (Present Tense)", "Escuchar; Yo (Present Tense)", "Ser; Nosotros (Present Tense)", "Hacer; Usted (Present Tense)", "Ir; Ellos (Present Tense)"];
 var conListAns = ["Hablo","Vive","Salimos","Bebe","Pintan", "Comen", "Tienes", "Eschucho", "Somos", "Hace", "Van"];
 console.log(conListQues);
-var vocabListQues = ["Language", "Escuela", "Night", "Trabajando", "To Study", "Maletas", "To Travel", "Communidad", "P];
-var vocabListAns = ["Idioma", "School", "Noche", "Working", "Estudiar", "Suitcases", "Viajar", "Community"]
+var vocabListQues = ["Language", "Escuela", "Night", "Trabajando", "To Study", "Maletas", "To Travel", "Communidad", "Future"];
+var vocabListAns = ["Idioma", "School", "Noche", "Working", "Estudiar", "Suitcases", "Viajar", "Community", "Futuro"]
 var movSpeed = 500;
 // var enemSpeed = 400;
 setGravity(1000);
@@ -38,8 +38,9 @@ scene("option-sect",() => {
     ])
 
     onClick("conjugation", () => go("plat-one-con"));
-
-scene("plat-one-con",() => {
+    onClick("vocab",() => go("plat-one-voc"));
+)
+    scene("plat-one-con",() => {
 /* Necessary Sprites */
 
  loadSprite("cursor", "/project-images/cursor.png"); // Player Sprite (Temporary)
