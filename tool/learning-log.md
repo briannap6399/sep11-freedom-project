@@ -504,7 +504,7 @@ This code is admittedly pretty simple to what the enemy collision looks like, wi
 ## Project: Spanish based Platformer
 ### 3/23/26 - 3/30/26:
 
-This week, I decided to add more prompts and answers to the `conjugation` arrays. I'm also in the progress of re-working the 'checkpoint', and making sure it segways into a new scene. Right now, it's only an object that the player can push around which is definitely not what it should be doing. Past this however, I'm also trying to get the AI to move, since it's stagnant right now and I'm going to use some time this week to start creating the `vocabulary` arrays.
+This week, I decided to add more prompts and answers to the `conjugation` arrays. I'm also in the progress of re-working the 'checkpoint', and making sure it segways into a new scene. Right now, it's only an object that the player can push around which is definitely not what it should be doing. Past this however, I'm also trying to get the AI to move, since it's stagnant right now and I'm going to use some time this week to start creating the `vocabulary` arrays. In addition to this, I've also started setting up the questionnaire portion of the Vocabulary, giving play testers the opportunity to test if the system works.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
