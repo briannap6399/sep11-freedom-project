@@ -139,7 +139,7 @@ var checkpoint = add([
     scene("check-point-con",() => {
          var quesNumCon = randi(0,11);
        var ques = prompt(conListQues[quesNumCon]);
-        if(ques == conListAns[Con]) {
+        if(ques == conListAns[quesNumCon]) {
         alert("That's correct! You're ready to move to the next level!");
         go("plat-one-con");
           } else {
@@ -152,7 +152,11 @@ var checkpoint = add([
     scene("plat-one-voc",() => {
         var quesNumVoc = randi(0,8);
         var quesTwo = prompt(vocabListQues[quesNumVoc]);
-        if
+        if(quesTwo == vocabListAns[quesNumVoc]) {
+            alert("Good job!");
+        } else {
+            alert("Doesn't work.. Sorry!"); 
+        }
 
     })
 
