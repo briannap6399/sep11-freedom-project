@@ -124,9 +124,9 @@ var checkpoint = add([
 })
 
  scene("status-con",() => {
-       var quesNum = randi(0,11);
-       var ques = prompt(conListQues[quesNum]);
-        if(ques == conListAns[quesNum]) {
+       var quesNumCon = randi(0,11);
+       var ques = prompt(conListQues[quesNumCon]);
+        if(ques == conListAns[quesNumCon]) {
         alert("That's correct!");
         go("plat-one-con");
 
@@ -137,9 +137,9 @@ var checkpoint = add([
     })
 
     scene("check-point-con",() => {
-         var quesNum = randi(0,11);
-       var ques = prompt(conListQues[quesNum]);
-        if(ques == conListAns[quesNum]) {
+         var quesNumCon = randi(0,11);
+       var ques = prompt(conListQues[quesNumCon]);
+        if(ques == conListAns[Con]) {
         alert("That's correct! You're ready to move to the next level!");
         go("plat-one-con");
           } else {
@@ -149,6 +149,11 @@ var checkpoint = add([
 
     })
 
+    scene("plat-one-voc",() => {
+        var quesNumVoc = randi(0,8);
+        var quesTwo = prompt(vocabListQues[quesNumVoc])
+
+    })
 
 
 </script>
