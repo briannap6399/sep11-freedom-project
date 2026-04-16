@@ -1,5 +1,5 @@
-# Entry 5
-##### X/X/XX
+# Entry 5: Completed MVP
+##### Brianna Peralta on April 15th, 2026 (04/15/26)
 
 Text
 
