@@ -1,4 +1,4 @@
-# Entry 6
+# Entry 6: End of Course Reflection
 ##### X/X/XX
 
 Text
