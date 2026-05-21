@@ -1,7 +1,7 @@
 # Entry 6: End of Course Reflection
-##### X/X/XX
+##### Brianna Peralta on May 21st, 2026 (05/21/26) 
+## Main Information: 
 
-Text
 
 [Previous](entry05.md) | [Next](entry07.md)
 
