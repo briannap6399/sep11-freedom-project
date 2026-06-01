@@ -1,25 +1,24 @@
 # SEP11 Freedom Project
 by **Brianna Peralta**
 
-## Context
-I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript along with a third-party JS tool.
+## Background Information:
+I am a student at [HSTAT](https://www.hstat.org/) currently in the [Software Engineering Program](https://hstatsep.github.io/) for the 11th Grade. The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript along with a third-party JS tool.
 
-For my project, I chose to work alongside a partner named Alberto Gonzalez Jr. to study **Kaboom** in order to help me make **A Brief Spanish Platformer**.
+For my project, I chose to work alongside a partner named Alberto Gonzalez Jr. to study **Kaboom** in order to help both of us create **A Brief Spanish Platformer**.
 
-## Links
+## Here are the Links to the Final Projects (As well as relevant Websites):
 
-[Product](https://albertog3410.github.io/sep11-freedom-project/tool/kaboom/kaboom-prompt.html)
+* [Our Presentation](https://docs.google.com/presentation/d/1m79h2I8hXE-Ybe_TbApceDgVLC0R6EAXaKzxhsH9Rv0/edit?usp=sharing)
+* [Our Product](https://albertog3410.github.io/sep11-freedom-project/tool/kaboom/kaboom-prompt.html)
 
-[Presentation](https://docs.google.com/presentation/d/1m79h2I8hXE-Ybe_TbApceDgVLC0R6EAXaKzxhsH9Rv0/edit?usp=sharing)
-
-## Implications
+## Implications:
 ##### PROS
 * 
 ##### CONS
 * 
 
 
-## Blog
+## Blog:
 Below you will find my blog about how I made my project.
 
 * [Entry 1: Tool Solidification](blog/entry01.md)
